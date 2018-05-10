@@ -1,4 +1,4 @@
-_VERSION = '5.0.2'
+_VERSION = '1.0.2'
 
 -- Version check
 PerformHttpRequest("https://github.com/rhys19/Menu/edit/master/version.txt", function(err, rText, headers)
