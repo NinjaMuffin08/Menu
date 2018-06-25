@@ -1,0 +1,314 @@
+<!-- 
+
+	ActionMenu 
+	Created by WolfKnight
+	Additional help from lowheartrate, TheStonedTurtle, and Briglair. 
+
+ -->
+
+<html>
+    <head>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="ui.js" type="text/javascript"></script>
+        <link href="ui.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <div id="actionmenu" style="display: none;">
+            <!--
+        This mainmenu div should be left as it is, you should change the buttons though.
+
+        If you want to make a submenu, then you must create a new div, with the ID of the
+        div being the data-sub attribute of the button that will open it. For example, the
+        below button Example Submenu, has the data-sub attribute of "examplesubmenu", which
+        is the same id as the div below. All submenus must also have a data-parent attribute.
+     -->
+            <div id="mainmenu">
+                <button class="menuoption" data-sub="examplesubmenu2">Police Toolbox</button>
+				<button class="menuoption" data-sub="examplesubmenu99">Police Vehicles</button>
+				<button class="menuoption" data-sub="examplesubmenu10">FD/EMS Toolbox</button>
+				<button class="menuoption" data-sub="examplesubmenu">Civ Toolbox</button>
+				<button class="menuoption" data-sub="examplesubmenu4">Vehicle</button>
+            </div>
+			
+			<div id="examplesubmenu99" data-parent="mainmenu" style="display: none;">
+                <button class="menuoption" data-sub="areacar">Area Cars</button>
+                <button class="menuoption" data-sub="trafficcar">Traffic Cars</button>
+				<button class="menuoption" data-sub="dogunit">Dog Unit Cars</button>
+				<button class="menuoption" data-sub="vans">Police Vans</button>
+				<button class="menuoption" data-sub="bike">Police Bikes</button>
+                <button class="menuoption" data-sub="fsucar">Force Support Cars</button>
+                <button class="menuoption" data-sub="sfocar">SFO Cars</button>
+				<button class="menuoption" data-sub="chopper">Helicopter</button>
+            </div>
+				<div id="chopper" data-parent="mainmenu" style="display: none;">
+                <button class="menuoption" data-action="india99">india99 - NAPS</button>
+            </div>
+			
+			<div id="areacar" data-parent="mainmenu" style="display: none;">
+                <button class="menuoption" data-action="wl9">WL9</button>
+                <button class="menuoption" data-action="wl10">WL10</button>
+                <button class="menuoption" data-action="wl11">WL11</button>
+                <button class="menuoption" data-action="wl12">WL12</button>
+				<button class="menuoption" data-action="wl13">WL13</button>
+				<button class="menuoption" data-action="wl14">WL14</button>
+                <button class="menuoption" data-action="wl15">WL15</button>
+                <button class="menuoption" data-action="wl16">WL16</button>
+			<button class="menuoption" data-sub="areacar1">Next Page</button>
+            </div>				
+				
+			<div id="areacar1" data-parent="mainmenu" style="display: none;">				
+                <button class="menuoption" data-action="wl17">WL17</button>
+				<button class="menuoption" data-action="wl18">WL18</button>
+				<button class="menuoption" data-action="wl19">WL19</button>
+                <button class="menuoption" data-action="wl20">WL20</button>
+                <button class="menuoption" data-action="wl21">WL21</button>
+                <button class="menuoption" data-action="wl22">WL22</button>
+				<button class="menuoption" data-action="gc25">- Unmarked gc25</button>
+				<button class="menuoption" data-action="gc26">- Unmarked gc26</button>
+				<button class="menuoption" data-action="gc27">- Unmarked gc27</button>
+            </div>
+			
+			
+			<div id="dogunit" data-parent="mainmenu" style="display: none;">
+                <button class="menuoption" data-action="qz28">QZ28 - marked</button>
+                <button class="menuoption" data-action="qz29">QZ29 - Unmarked</button>
+                <button class="menuoption" data-action="qz30">QZ30 - Van</button>
+            </div>
+			<div id="trafficcar" data-parent="mainmenu" style="display: none;">
+                <button class="menuoption" data-action="at8">AT8</button>
+                <button class="menuoption" data-action="at9">AT9</button>
+                <button class="menuoption" data-action="at10">AT10</button>
+                <button class="menuoption" data-action="at11">AT11</button>
+				<button class="menuoption" data-action="at12">AT12</button>
+				<button class="menuoption" data-action="at13">AT13</button>
+                <button class="menuoption" data-action="at14">AT14</button>
+                <button class="menuoption" data-action="at15">AT15 - Unmarked</button>
+                <button class="menuoption" data-action="at16">AT16 - Unmarked</button>
+            </div>
+			<div id="vans" data-parent="mainmenu" style="display: none;">
+                <button class="menuoption" data-action="vg18">van - 1</button>
+                <button class="menuoption" data-action="vg19">van - 2</button>
+                <button class="menuoption" data-action="vg57">van - 3</button>
+            </div>
+			<div id="bike" data-parent="mainmenu" style="display: none;">
+                <button class="menuoption" data-action="qt20">QT20</button>
+                <button class="menuoption" data-action="qt21">QT21</button>
+                <button class="menuoption" data-action="qt22">QT22</button>
+            </div>				
+				
+			<div id="fsucar" data-parent="mainmenu" style="display: none;">
+                <button class="menuoption" data-action="wf9">WF9</button>
+                <button class="menuoption" data-action="wf10">WF10</button>
+                <button class="menuoption" data-action="wf11">WF11</button>
+                <button class="menuoption" data-action="wf12">WF12</button>
+				<button class="menuoption" data-action="wf13">WF13</button>
+			    <button class="menuoption" data-action="wf14">WF14</button>
+                <button class="menuoption" data-action="wf15">WF15 - Unmarked</button>
+                <button class="menuoption" data-action="wf16">WF16 - Unmarked</button>
+            </div>
+			<div id="sfocar" data-parent="mainmenu" style="display: none;">
+                <button class="menuoption" data-action="wf20">WF20 - Jankel</button>
+                <button class="menuoption" data-action="wf21">WF21 - Jankel</button>
+            </div>
+			
+			
+            <div id="examplesubmenu" data-parent="mainmenu" style="display: none;">
+                <button class="menuoption" data-action="hands">Hands up</button>
+                <button class="menuoption" data-action="kneel">Kneel With Hands up</button>
+                <button class="menuoption" data-action="dropweap">Drop weapon</button>
+				<button class="menuoption" data-action="setbac">Set alcohol limit</button>
+                <button class="menuoption" data-sub="examplesubmenu5">Adverts</button>
+				<button class="menuoption" data-sub="examplesubmenu15">Emotes</button>
+            </div>
+			
+			<div id="examplesubmenu2" data-parent="mainmenu" style="display: none;">
+			    <button class="menuoption" data-sub="examplesubmenu3">Actions</button>
+				<button class="menuoption" data-sub="examplesubmenu13">Clothing</button>
+				<button class="menuoption" data-sub="examplesubmenu8">Emotes</button>
+				<button class="menuoption" data-action="radar">Radar</button>
+				<button class="menuoption" data-action="breath">Breathalyze</button>
+				<button class="menuoption" data-sub="ospawn">Object Spawner</button>
+            </div>
+			
+			<div id="ospawn" data-parent="mainmenu" style="display: none;">
+				<button class="menuoption" data-action="spike">Place Spike Strip</button>
+				<button class="menuoption" data-action="spike1">Remove Spike Strip</button>
+				<button class="menuoption" data-action="cone2">Place Cone</button>
+				<button class="menuoption" data-action="cone2r">Remove Cone</button>
+				<button class="menuoption" data-action="barrier">Place Barrier</button>
+				<button class="menuoption" data-action="barrier_rem">Remove Barrier</button>
+            </div>
+
+            <div id="examplesubmenu3" data-parent="mainmenu" style="display: none;">
+                <button class="menuoption" data-action="cuff">Cuff Player</button>
+                <button class="menuoption" data-action="drag">Drag Player</button>
+                <button class="menuoption" data-action="seat">Put Player In Vehicle</button>
+                <button class="menuoption" data-action="unseat">Take Player Out Of Vehicle</button>
+            </div>
+
+            <div id="examplesubmenu4" data-parent="mainmenu" style="display: none;">
+                <button class="menuoption" data-action="engine">Engine</button>
+                <button class="menuoption" data-sub="examplesubmenu6">Windows</button>
+                <button class="menuoption" data-sub="examplesubmenu7">Doors</button>
+				<button class="menuoption" data-action="delete">Delete Vehicle</button>
+            </div>
+
+            <div id="examplesubmenu5" data-parent="mainmenu" style="display: none;">
+				<button class="menuoption" data-action="ad1">24/7</button>
+				<button class="menuoption" data-action="ad2">Ammunation</button>
+                <button class="menuoption" data-action="ad3">News</button>
+                <button class="menuoption" data-action="ad4">Vanilla Unicorn</button>
+				<button class="menuoption" data-action="ad5">Downtown Cab Co.</button>
+				<button class="menuoption" data-sub="examplesubmenu19">Next Page</button>
+            </div>
+			
+			<div id="examplesubmenu19" data-parent="mainmenu" style="display: none;">
+				<button class="menuoption" data-action="ad6">LS Traffic</button>
+				<button class="menuoption" data-action="ad7">LS Customs</button>
+                <button class="menuoption" data-action="ad8">Ace Liquor</button>
+                <button class="menuoption" data-action="ad9">Limited Gasoline</button>
+				<button class="menuoption" data-action="ad10">Go Postal</button>
+				<button class="menuoption" data-sub="examplesubmenu20">Next Page</button>
+				<button class="menuoption" data-sub="examplesubmenu5">Previous Page</button>
+            </div>
+			
+			<div id="examplesubmenu20" data-parent="mainmenu" style="display: none;">
+				<button class="menuoption" data-action="ad11">Hayes Auto</button>
+				<button class="menuoption" data-action="ad12">Vangelico's</button>
+                <button class="menuoption" data-action="ad13">Cluckin Bell</button>
+                <button class="menuoption" data-action="ad14">Bugstars</button>
+				<button class="menuoption" data-action="ad15">Fleeca Bank</button>
+				<button class="menuoption" data-sub="examplesubmenu21">Next Page</button>
+				<button class="menuoption" data-sub="examplesubmenu19">Previous Page</button>
+            </div>
+			
+			<div id="examplesubmenu21" data-parent="mainmenu" style="display: none;">
+				<button class="menuoption" data-action="ad16">Echo Sechs</button>
+				<button class="menuoption" data-action="ad17">Mors Mutual</button>
+                <button class="menuoption" data-action="ad18">PostOP</button>
+                <button class="menuoption" data-action="ad19">Auto Exotic</button>
+				<button class="menuoption" data-action="ad20">LS Water & Power</button>
+				<button class="menuoption" data-action="ad21">Dynasty 8</button>
+				<button class="menuoption" data-sub="examplesubmenu20">Previous Page</button>
+            </div>
+
+            <div id="examplesubmenu6" data-parent="mainmenu" style="display: none;">
+                <button class="menuoption" data-action="fwindows">Front Windows</button>
+                <button class="menuoption" data-action="rwindows">Rear Windows</button>
+            </div>
+
+            <div id="examplesubmenu7" data-parent="mainmenu" style="display: none;">
+                <button class="menuoption" data-action="trunk">Trunk</button>
+                <button class="menuoption" data-action="hood">Hood</button>
+                <button class="menuoption" data-action="fleft">Front Left</button>
+                <button class="menuoption" data-action="fright">Front Right</button>
+                <button class="menuoption" data-action="rleft">Rear Left</button>
+                <button class="menuoption" data-action="rright">Rear Right</button>
+            </div>
+			
+            <div id="examplesubmenu8" data-parent="mainmenu" style="display: none;">
+			    <button class="menuoption" data-action="radio">Toggle Radio</button>
+                <button class="menuoption" data-action="radiogun">Radio & Point Gun</button>
+				<button class="menuoption" data-action="stance">LEO Stance</button>
+				<button class="menuoption" data-action="investigate">Investigate</button>
+				<button class="menuoption" data-action="holster">Holster</button>
+				<button class="menuoption" data-sub="examplesubmenu18">Next Page</button>
+				<button class="menuoption" data-action="cancel">Cancel Emote</button>
+            </div>
+			
+			 <div id="examplesubmenu18" data-parent="mainmenu" style="display: none;">
+			    <button class="menuoption" data-action="citation">Citation</button>
+				<button class="menuoption" data-action="notes">Take Notes</button>
+				<button class="menuoption" data-action="traffic">Direct Traffic</button>
+				<button class="menuoption" data-sub="examplesubmenu8">Previous Page</button>
+				<button class="menuoption" data-action="cancel">Cancel Emote</button>
+            </div>
+			
+			<div id="examplesubmenu10" data-parent="mainmenu" style="display: none;">
+			    <button class="menuoption" data-sub="examplesubmenu11">Actions</button>
+				<button class="menuoption" data-sub="examplesubmenu14">Clothing</button>
+				<button class="menuoption" data-sub="examplesubmenu12">Emotes</button>
+				<button class="menuoption" data-sub="fireveh">Fire Vehicles</button>	
+				<button class="menuoption" data-sub="ambuveh">EAS Vehicles</button>
+				<button class="menuoption" data-sub="heli">EAS Chopper</button>
+            </div>
+			<div id="heli" data-parent="mainmenu" style="display: none;">
+			    <button class="menuoption" data-action="helimed1">Helimed1 - chopper</button>
+            </div>
+			
+			<div id="fireveh" data-parent="mainmenu" style="display: none;">
+			    <button class="menuoption" data-action="w71p1">W71P1 - Ladder</button>
+				<button class="menuoption" data-action="w71p2">W71p2 - scania</button>
+				<button class="menuoption" data-action="w71p3">W71P3 - volvo</button>
+            </div>	
+			<div id="ambuveh" data-parent="mainmenu" style="display: none;">
+			    <button class="menuoption" data-action="350">350 EAS - Bike</button>
+				<button class="menuoption" data-action="4220">4220 - van</button>
+				<button class="menuoption" data-action="4221">4221 - Car</button>
+            </div>			
+			
+			
+			<div id="examplesubmenu11" data-parent="mainmenu" style="display: none;">
+			    <button class="menuoption" data-action="drag">Carry On Stretcher</button>
+				<button class="menuoption" data-action="seat">Seat Player In Ambulance</button>
+				<button class="menuoption" data-action="unseat">Save Player From Vehicle</button>
+				<button class="menuoption" data-action="cancel">Cancel Emote</button>
+            </div>
+			
+			<div id="examplesubmenu12" data-parent="mainmenu" style="display: none;">
+			    <button class="menuoption" data-action="medic">Tend To Patient</button>
+				<button class="menuoption" data-action="notes">Take Notes</button>
+				<button class="menuoption" data-action="weld">Weld Vehicle</button>
+				<button class="menuoption" data-action="cancel">Cancel Emote</button>
+            </div>
+			
+			<div id="examplesubmenu13" data-parent="mainmenu" style="display: none;">
+			    <button class="menuoption" data-action="area">Area Unit Uniform</button>
+				<button class="menuoption" data-action="traffic1">Traffic unit Uniform</button>
+				<button class="menuoption" data-action="support">Force Support Uniform</button>
+				<button class="menuoption" data-action="sfo">SFO Uniform</button>
+				<button class="menuoption" data-action="brit">Plain Clothed Uniform</button>
+            </div>
+			
+			<div id="examplesubmenu14" data-parent="mainmenu" style="display: none;">
+			    <button class="menuoption" data-action="fire">Firefighter Uniform</button>
+				<button class="menuoption" data-action="medicoutfit">Medic Uniform</button>
+            </div>
+			
+			<div id="examplesubmenu15" data-parent="mainmenu" style="display: none;">
+			    <button class="menuoption" data-action="smoke">Smoke</button>
+				<button class="menuoption" data-action="party">Party</button>
+				<button class="menuoption" data-action="pushups">Pushups</button>
+				<button class="menuoption" data-action="situps">Situps</button>
+				<button class="menuoption" data-action="phone">Phone</button>
+				<button class="menuoption" data-sub="examplesubmenu16">Next Page</button>
+				<button class="menuoption" data-action="cancel">Cancel Emote</button>
+            </div>
+			
+			<div id="examplesubmenu16" data-parent="mainmenu" style="display: none;">
+			    <button class="menuoption" data-action="injured">Injured</button>
+				<button class="menuoption" data-action="weed">Weed</button>
+				<button class="menuoption" data-action="coffee">Coffee</button>
+			    <button class="menuoption" data-action="photo">Photo</button>
+				<button class="menuoption" data-action="binoculars">Binoculars</button>
+				<button class="menuoption" data-sub="examplesubmenu17">Next Page</button>
+				<button class="menuoption" data-sub="examplesubmenu15">Previous Page</button>
+				<button class="menuoption" data-action="cancel">Cancel Emote</button>
+            </div>
+			
+			<div id="examplesubmenu17" data-parent="mainmenu" style="display: none;">
+			    <button class="menuoption" data-action="drink">Drink</button>
+			    <button class="menuoption" data-action="film">Film</button>
+				<button class="menuoption" data-action="weights">Weights</button>
+				<button class="menuoption" data-action="flex">Flex</button>
+				<button class="menuoption" data-sub="examplesubmenu16">Previous Page</button>
+				<button class="menuoption" data-action="cancel">Cancel Emote</button>
+            </div>
+
+            <!-- Do not remove this or you will not be able to exit the menu -->
+            <button onclick="ResetMenu()">Back</button>
+            <button class="menuoption" data-action="exit">Exit</button>
+        </div>
+    </body>
+</html>
