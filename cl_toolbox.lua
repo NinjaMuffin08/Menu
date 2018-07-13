@@ -93,11 +93,12 @@ RegisterNUICallback( "ButtonClick", function( data, cb )
 		     dropweap()
 	-- [LEO Toolbox]
 	
-	elseif ( data == "breath" ) then
-		TriggerEvent( "breath" )
-	elseif ( data == "setbac" ) then 
-		TriggerEvent( "/bacset" )
-
+	--elseif ( data == "breath" ) then
+	--	TriggerEvent( "breath" )
+	--elseif ( data == "setbac" ) then 
+	--	TriggerEvent( "/bacset" )
+-- BAC DISABLED DUE TO NIC NOT WANTING IT RELEASED!!!
+			-- IF YOU HAVE THE CODE DM ME ON DISCORD FOR A HOW TO PUT IT IN THE MENU!
 	
 
   -- [Vehicle]
@@ -125,116 +126,20 @@ RegisterNUICallback( "ButtonClick", function( data, cb )
 
   -- [Vehicle]
   
-  
+  --[[
+HOW TO ADD YOUR OWN SPAWN NAMES!
+			
+	ADD THE CODE: 
+	elseif ( data == "police2" ) then 
+		TriggerEvent( "police2" )		
+			to the line before elsif (data == "delete" ) then
+	
+			
+			
+--]]
 
-	elseif ( data == "wl9" ) then 
-		TriggerEvent( "wl9" )
-	elseif ( data == "wl10" ) then 
-		TriggerEvent( "wl10" )
-	elseif ( data == "wl11" ) then 
-		TriggerEvent( "wl11" )
-	elseif ( data == "wl12" ) then 
-		TriggerEvent( "wl12" )
-	elseif ( data == "wl13" ) then 
-		TriggerEvent( "wl13" )
-	elseif ( data == "at8" ) then
-		TriggerEvent( "at8" )
-	elseif ( data == "at9" ) then 
-		TriggerEvent( "at9" )
-	elseif ( data == "wl15" ) then 
-		TriggerEvent( "wl15" )
-	elseif ( data == "wl6" ) then 
-		TriggerEvent( "wl6" )
-	elseif ( data == "wl17" ) then 
-		TriggerEvent( "wl17" )
-	elseif ( data == "wl18" ) then 
-		TriggerEvent( "wl18" )
-	elseif ( data == "wl19" ) then 
-		TriggerEvent( "wl19" )
-	elseif ( data == "wl20" ) then 
-		TriggerEvent( "wl20" )
-	elseif ( data == "wl21" ) then
-		TriggerEvent( "wl21" )
-	elseif ( data == "wl22" ) then 
-		TriggerEvent( "wl22" )
-	elseif ( data == "gc25" ) then 
-		TriggerEvent( "gc25" )
-	elseif ( data == "gc26" ) then 
-		TriggerEvent( "gc26" )
-	elseif ( data == "gc27" ) then 
-		TriggerEvent( "gc27" )
-	elseif ( data == "gc28" ) then 
-		TriggerEvent( "gc28" )
-	elseif ( data == "qz28" ) then 
-		TriggerEvent( "qz28" )
-	elseif ( data == "qz29" ) then 
-		TriggerEvent( "qz29" )
-	elseif ( data == "qz30" ) then
-		TriggerEvent( "qz30" )
-	elseif ( data == "vg18" ) then 
-		TriggerEvent( "vg18" )
-	elseif ( data == "vg19" ) then 
-		TriggerEvent( "vg19" )
-	elseif ( data == "vg57" ) then 
-		TriggerEvent( "vg57" )
-	elseif ( data == "wf9" ) then 
-		TriggerEvent( "wf9" )
-	elseif ( data == "wf10" ) then 
-		TriggerEvent( "wf10" )
-	elseif ( data == "wf11" ) then 
-		TriggerEvent( "wf11" )
-	elseif ( data == "wf12" ) then 
-		TriggerEvent( "wf12" )
-	elseif ( data == "wf13" ) then
-		TriggerEvent( "wf13" )
-	elseif ( data == "wf14" ) then 
-		TriggerEvent( "wf14" )
-	elseif ( data == "wf15" ) then 
-		TriggerEvent( "wf15" )
-	elseif ( data == "wf16" ) then 
-		TriggerEvent( "wf16" )
-	elseif ( data == "wf20" ) then 
-		TriggerEvent( "wf20" )
-	elseif ( data == "wf21" ) then 
-		TriggerEvent( "wf21" )
-	elseif ( data == "at8" ) then 
-		TriggerEvent( "at8" )
-	elseif ( data == "at9" ) then 
-		TriggerEvent( "at9" )
-	elseif ( data == "at10" ) then 
-		TriggerEvent( "at10" )
-	elseif ( data == "at11" ) then
-		TriggerEvent( "at11" )
-	elseif ( data == "at12" ) then 
-		TriggerEvent( "at12" )
-	elseif ( data == "at13" ) then 
-		TriggerEvent( "at13" )
-	elseif ( data == "at14" ) then 
-		TriggerEvent( "at14" )
-	elseif ( data == "at15" ) then 
-		TriggerEvent( "at15" )
-	elseif ( data == "qt20" ) then 
-		TriggerEvent( "qt20" )
-	elseif ( data == "qt21" ) then 
-		TriggerEvent( "qt21" )
-	elseif ( data == "qt22" ) then 
-		TriggerEvent( "qt22" )
-	elseif ( data == "w71p1" ) then
-		TriggerEvent( "w71p1" )
-	elseif ( data == "w71p2" ) then 
-		TriggerEvent( "w71p2" )
-	elseif ( data == "w71p3" ) then 
-		TriggerEvent( "w71p3" )	
-	elseif ( data == "350" ) then 
-		TriggerEvent( "350" )
-	elseif ( data == "4220" ) then
-		TriggerEvent( "4220" )
-	elseif ( data == "4221" ) then 
-		TriggerEvent( "4221" )
-	elseif ( data == "helimed1" ) then 
-		TriggerEvent( "helimed1" )	
-	elseif ( data == "india99" ) then 
-		TriggerEvent( "india99" )		
+	elseif ( data == "police2" ) then 
+		TriggerEvent( "police2" )		
 	elseif ( data == "delete" ) then
 	    TriggerEvent( 'wk:deleteVehicle' )
   
@@ -357,19 +262,19 @@ RegisterNUICallback( "ButtonClick", function( data, cb )
 
    -- [Outfits]
 
-    elseif ( data == "area" ) then 
+    elseif ( data == "police" ) then 
 		TriggerEvent( "lspdOutfit" )
-    elseif ( data == "traffic1" ) then 
+    elseif ( data == "sheriff" ) then 
 		TriggerEvent( "bcsoOutfit" )
-    elseif ( data == "support" ) then 
+    elseif ( data == "hp" ) then 
 		TriggerEvent( "sahpOutfit" )
-	elseif ( data == "sfo" ) then 
+	elseif ( data == "hp2" ) then 
 		TriggerEvent( "sahpOutfit12" )
-	elseif ( data == "brit" ) then 
+	elseif ( data == "lspd2" ) then 
 		TriggerEvent( "lspdOutfit1" )
     elseif ( data == "fire" ) then 
 		TriggerEvent( "fireOutfit" )
-	elseif ( data == "medicoutfit" ) then 
+	elseif ( data == "medic" ) then 
 		TriggerEvent( "medicOutfit" )
 
 	elseif ( data == "exit" ) then 
@@ -390,108 +295,16 @@ end )
 	uses the input blocking found in the ES Banking resource, credits to 
 	the authors.
 ------------------------------------------------------------------------]]--
-RegisterNetEvent('/bacset')
-TriggerEvent( '/bacset' )
-bac = {}
-AddEventHandler('chatMessage', function(source, color, message) --Commands
-  local args = stringsplit(message, " ")
-  if (args[1] == "/bacset") then
-    CancelEvent()
-
-    if (args[2] ~= nil) then
-	  bac[source] = args[2]
-	  TriggerClientEvent('chatMessage', source, "Breathalyzer", {47, 121, 239}, "BAC set to: "..bac[source])
-    else
-      TriggerClientEvent('chatMessage', source, "Breathalyzer", {47, 121, 239}, "Usage: /bacset [number]")
-    end
-  end
-  
-  
-if args[1] == "/bactest" then
-	CancelEvent()
-	if args[2] ~= nil then
-		if (tonumber(args[2]) ~= nil) then
-		  if (bac[tonumber(args[2])] ~= nil) then
-		    TriggerClientEvent("chatMessage", source, "Breathalyzer", {47, 121, 239}, "This users BAC is: "..bac[tonumber(args[2])])
-		  else
-		    TriggerClientEvent("chatMessage", source, "Breathalyzer", {47, 121, 239}, "This user does not have a BAC set.")
-		  end
-		else
-			TriggerClientEvent("chatMessage", source, "Breathalyzer", {47, 121, 239}, "Usage: /bactest [player id]")
-		end
-	else
-		TriggerClientEvent("chatMessage", source, "Breathalyzer", {47, 121, 239}, "Usage: /bactest [player id]")
-	end
-end
-  
-  if (args[1] == "/bacclear") then
-    CancelEvent()
-	bac[source] = nil
-	TriggerClientEvent('chatMessage', source, "Breathalyzer", {47, 121, 239}, "Your BAC has been reset")
-  end
-  
-  -- "Administrator" commands below here
-  
-  if (args[1] == "/bacclearall") then
-    CancelEvent()
-	if (args[2] ~= nil) then
-	  if (args[2] == mpass) then
-	    bac = {}
-		TriggerClientEvent('chatMessage', -1, "Breathalyzer", {47, 121, 239}, "All BAC's have been reset")
-      else
-	    TriggerClientEvent('chatMessage', source, "Breathalyzer", {47, 121, 239}, "Incorrect password")
-	  end
-	else
-	  TriggerClientEvent('chatMessage', source, "Breathalyzer", {47, 121, 239}, "Usage: /bacclearall [password]")
-	end
-  end
-  
-  if (args[1] == "/bacclearone") then
-    CancelEvent()
-	if (args[3] ~= nil) then
-	  if (tonumber(args[2]) ~= nil) then
-	    if (args[3] == mpass) then
-	      bac[tonumber(args[2])] = nil
-	  	  TriggerClientEvent('chatMessage', -1, "Breathalyzer", {47, 121, 239}, "Playerid "..args[2].."'s BAC has been cleared")
-        else
-	      TriggerClientEvent('chatMessage', source, "Breathalyzer", {47, 121, 239}, "Incorrect password")
-	    end
-	  else
-	    TriggerClientEvent('chatMessage', source, "Breathalyzer", {47, 121, 239}, "Usage: /bacclearone [id] [password]")
-      end
-	else
-	  TriggerClientEvent('chatMessage', source, "Breathalyzer", {47, 121, 239}, "Usage: /bacclearone [id] [password]")
-	end
-  end
-end)
-
-AddEventHandler('playerDropped', function() -- upon player leaving
-  bac[source] = nil
-  print("The playerid "..source.."'s BAC has been reset automatically")
-end)
-
-function stringsplit(inputstr, sep)
-  if sep == nil then
-        sep = "%s"
-    end
-    local t={} ; i=1
-    for str in string.gmatch(inputstr, "([^"..sep.."]+)") do
-        t[i] = str
-        i = i + 1
-    end
-    return t
-end
 
 
 
+--[[
+add police vehs here:
 
-
-
-
-RegisterNetEvent('wl9')
-TriggerEvent( 'wl9' )
-AddEventHandler('wl9', function()
-local hash = GetHashKey("wl9")
+RegisterNetEvent('yourpdcarspawncode')
+TriggerEvent( 'yourpdcarspawncode' )
+AddEventHandler('yourpdcarspawncode', function()
+local hash = GetHashKey("yourpdcarspawncode")
 
 RequestModel(hash)
 
@@ -504,10 +317,18 @@ local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
 local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
 end)
 
-RegisterNetEvent('wl10')
-TriggerEvent( 'wl10' )
-AddEventHandler('wl10', function()
-local hash = GetHashKey("wl10")
+add that under police2
+
+
+
+--]]
+
+
+
+RegisterNetEvent('police2')
+TriggerEvent( 'police2' )
+AddEventHandler('police2', function()
+local hash = GetHashKey("police2")
 
 RequestModel(hash)
 
@@ -520,821 +341,8 @@ local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
 local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
 end)
 
-RegisterNetEvent('wl11')
-TriggerEvent( 'wl11' )
-AddEventHandler('wl11', function()
-local hash = GetHashKey("wl11")
 
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wl12')
-TriggerEvent( 'wl12' )
-AddEventHandler('wl12', function()
-local hash = GetHashKey("wl12")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wl13')
-TriggerEvent( 'wl13' )
-AddEventHandler('wl13', function()
-local hash = GetHashKey("wl13")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wl14')
-TriggerEvent( 'wl14' )
-AddEventHandler('wl14', function()
-local hash = GetHashKey("wll14")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wl15')
-TriggerEvent( 'wl15' )
-AddEventHandler('wl15', function()
-local hash = GetHashKey("wl15")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wl16')
-TriggerEvent( 'wl16' )
-AddEventHandler('wl16', function()
-local hash = GetHashKey("wl16")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wl17')
-TriggerEvent( 'wl17' )
-AddEventHandler('wl17', function()
-local hash = GetHashKey("wl17")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wl18')
-TriggerEvent( 'wl18' )
-AddEventHandler('wl18', function()
-local hash = GetHashKey("wl18")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wl19')
-TriggerEvent( 'wl19' )
-AddEventHandler('wl19', function()
-local hash = GetHashKey("wl19")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wl20')
-TriggerEvent( 'wl20' )
-AddEventHandler('wl20', function()
-local hash = GetHashKey("wl20")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wl21')
-TriggerEvent( 'wl21' )
-AddEventHandler('wl21', function()
-local hash = GetHashKey("wl21")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('gc25')
-TriggerEvent( 'gc25' )
-AddEventHandler('gc25', function()
-local hash = GetHashKey("gc25")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('gc26')
-TriggerEvent( 'gc26' )
-AddEventHandler('gc26', function()
-local hash = GetHashKey("gc26")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('gc27')
-TriggerEvent( 'gc27' )
-AddEventHandler('gc27', function()
-local hash = GetHashKey("gc27")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('gc28')
-TriggerEvent( 'gc28' )
-AddEventHandler('gc28', function()
-local hash = GetHashKey("gc28")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('qz28')
-TriggerEvent( 'qz28' )
-AddEventHandler('qz28', function()
-local hash = GetHashKey("qz28")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('qz29')
-TriggerEvent( 'qz29' )
-AddEventHandler('qz29', function()
-local hash = GetHashKey("qz29")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('qz30')
-TriggerEvent( 'qz30' )
-AddEventHandler('qz30', function()
-local hash = GetHashKey("qz30")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('vg18')
-TriggerEvent( 'vg18' )
-AddEventHandler('vg18', function()
-local hash = GetHashKey("vg18")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('vg19')
-TriggerEvent( 'vg19' )
-AddEventHandler('vg19', function()
-local hash = GetHashKey("vg19")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('vg57')
-TriggerEvent( 'vg57' )
-AddEventHandler('vg57', function()
-local hash = GetHashKey("vg57")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wf9')
-TriggerEvent( 'wf9' )
-AddEventHandler('wf9', function()
-local hash = GetHashKey("wf9")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wf10')
-TriggerEvent( 'wf10' )
-AddEventHandler('wf10', function()
-local hash = GetHashKey("wf10")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wf11')
-TriggerEvent( 'wf11' )
-AddEventHandler('wf11', function()
-local hash = GetHashKey("wf11")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wf12')
-TriggerEvent( 'wf12' )
-AddEventHandler('wf12', function()
-local hash = GetHashKey("wf12")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wf13')
-TriggerEvent( 'wf13' )
-AddEventHandler('wf13', function()
-local hash = GetHashKey("wf13")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wf14')
-TriggerEvent( 'wf14' )
-AddEventHandler('wf14', function()
-local hash = GetHashKey("wf14")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wf15')
-TriggerEvent( 'wf15' )
-AddEventHandler('wf15', function()
-local hash = GetHashKey("wf15")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wf16')
-TriggerEvent( 'wf16' )
-AddEventHandler('wf16', function()
-local hash = GetHashKey("wf16")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wf20')
-TriggerEvent( 'wf20' )
-AddEventHandler('wf20', function()
-local hash = GetHashKey("wf20")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('wf21')
-TriggerEvent( 'wf21' )
-AddEventHandler('wf21', function()
-local hash = GetHashKey("wf21")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('at8')
-TriggerEvent( 'at8' )
-AddEventHandler('at8', function()
-local hash = GetHashKey("at8")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('at9')
-TriggerEvent( 'at9' )
-AddEventHandler('at9', function()
-local hash = GetHashKey("at9")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('at10')
-TriggerEvent( 'at10' )
-AddEventHandler('at10', function()
-local hash = GetHashKey("at10")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('at11')
-TriggerEvent( 'at11' )
-AddEventHandler('at11', function()
-local hash = GetHashKey("at11")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('at12')
-TriggerEvent( 'at12' )
-AddEventHandler('at12', function()
-local hash = GetHashKey("at12")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('at13')
-TriggerEvent( 'at13' )
-AddEventHandler('at13', function()
-local hash = GetHashKey("at13")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('at14')
-TriggerEvent( 'at14' )
-AddEventHandler('at14', function()
-local hash = GetHashKey("at14")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('at15')
-TriggerEvent( 'at15' )
-AddEventHandler('at15', function()
-local hash = GetHashKey("at15")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('at16')
-TriggerEvent( 'at16' )
-AddEventHandler('at16', function()
-local hash = GetHashKey("at16")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('qt20')
-TriggerEvent( 'qt20' )
-AddEventHandler('qt20', function()
-local hash = GetHashKey("qt20")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('qt21')
-TriggerEvent( 'qt21' )
-AddEventHandler('qt21', function()
-local hash = GetHashKey("qt21")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('qt22')
-TriggerEvent( 'qt22' )
-AddEventHandler('qt22', function()
-local hash = GetHashKey("qt22")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('w71p1')
-TriggerEvent( 'w71p1' )
-AddEventHandler('w71p1', function()
-local hash = GetHashKey("w71p1")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('w71p2')
-TriggerEvent( 'w71p2' )
-AddEventHandler('w71p2', function()
-local hash = GetHashKey("w71p2")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('w71p3')
-TriggerEvent( 'w71p3' )
-AddEventHandler('w71p3', function()
-local hash = GetHashKey("w71p3")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('350')
-TriggerEvent( '350' )
-AddEventHandler('350', function()
-local hash = GetHashKey("350")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('4220')
-TriggerEvent( '4220' )
-AddEventHandler('4220', function()
-local hash = GetHashKey("4220")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('4221')
-TriggerEvent( '4221' )
-AddEventHandler('4221', function()
-local hash = GetHashKey("4221")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('helimed1')
-TriggerEvent( 'helimed1' )
-AddEventHandler('helimed1', function()
-local hash = GetHashKey("helimed1")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-RegisterNetEvent('india99')
-TriggerEvent( 'india99' )
-AddEventHandler('india99', function()
-local hash = GetHashKey("india99")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
+-- REPLACE THIS LINE WITH YOUR POLICE SPAWN CODES!!!
 
 RegisterNetEvent('cone2')
 AddEventHandler('cone2', function()
@@ -1395,18 +403,6 @@ function Removecone2()
    end
 end	
 
---[[function Removecone2()
-   local ped = GetPlayerPed(-1)
-   local veh = GetVehiclePedIsIn(ped, false)
-   local vehCoord = GetEntityCoords(ped)
-   if DoesObjectOfTypeExistAtCoords(vehCoord["x"], vehCoord["y"], vehCoord["z"], 0.9, GetHashKey("prop_mp_cone_01"), true) then
-local  cone2 = GetClosestObjectOfType(vehCoord["x"], vehCoord["y"], vehCoord["z"], 0.9, GetHashKey("prop_mp_cone_01"), false, false, false)
-      SetEntityAsMissionEntity(cone2, true, true)
-      DeleteObject(cone2)
-	  notification('~g~The cone has been Removed!')
-   end
-end	--]]
-
 
 function barrier()
 		local pP = GetPlayerPed(-1)
@@ -1429,101 +425,6 @@ local  barrier = GetClosestObjectOfType(vehCoord["x"], vehCoord["y"], vehCoord["
 	  notification('~r~The Barrier has been Removed!')
    end
 end	
-
-AddEventHandler('murtaza:cone', function()
-	local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), true))
-	local heading = GetEntityHeading(GetPlayerPed(-1))
-	
-	RequestModel('prop_mp_cone_01')
-	
-	while not HasModelLoaded('prop_mp_cone_01') do
-		Citizen.Wait(1)
-	end
-	
-	local cone = CreateObject('prop_mp_cone_01', x, y, z-2, true, true, true)
-	PlaceObjectOnGroundProperly(cone)
-	SetEntityHeading(cone, heading)
-	notification('~g~The cone has been placed!')
-end)
-
-AddEventHandler('murtaza:consign1', function()
-	local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), true))
-	local heading = GetEntityHeading(GetPlayerPed(-1))
-	
-	RequestModel('prop_consign_01a')
-	
-	while not HasModelLoaded('prop_consign_01a') do
-		Citizen.Wait(1)
-	end
-	local cone = CreateObject('prop_consign_01a', x, y, z-1, true, true, true)
-	PlaceObjectOnGroundProperly(consign1)
-	SetEntityHeading(consign1, heading)
-	notification('~g~The sign has been placed!')
-end)
-
-AddEventHandler('murtaza:barrier2', function()
-	local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), true))
-	local heading = GetEntityHeading(GetPlayerPed(-1))
-	
-	RequestModel('prop_barrier_work01a')
-	
-	while not HasModelLoaded('prop_barrier_work01a') do
-		Citizen.Wait(1)
-	end
-	
-	local barrier2 = CreateObject('prop_barrier_work01a', x, y, z-2, true, true, true)
-	PlaceObjectOnGroundProperly(barrier2)
-	SetEntityHeading(barrier2, heading)
-	notification('~g~The barrier has been placed!')
-end)
-
-AddEventHandler('murtaza:sbarrier', function()
-	local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), true))
-	local heading = GetEntityHeading(GetPlayerPed(-1))
-	
-	RequestModel('prop_mp_barrier_02b')
-	
-	while not HasModelLoaded('prop_mp_barrier_02b') do
-		Citizen.Wait(1)
-	end
-	
-	local sbarrier = CreateObject('prop_mp_barrier_02b', x, y, z-2, true, true, true)
-	PlaceObjectOnGroundProperly(sbarrier)
-	SetEntityHeading(sbarrier, heading)
-	notification('~g~The small barrier has been placed!')
-end)
-
-AddEventHandler('murtaza:barrier3', function()
-	local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), true))
-	local heading = GetEntityHeading(GetPlayerPed(-1))
-	
-	RequestModel('prop_barrier_06a')
-	
-	while not HasModelLoaded('prop_barrier_work06a') do
-		Citizen.Wait(1)
-	end
-	
-	local sbarrier = CreateObject('prop_barrier_work06a', x, y, z-1, true, true, true)
-	PlaceObjectOnGroundProperly(barrier3)
-	SetEntityHeading(barrier3, heading)
-	notification('~g~The barrier has been placed!')
-end)
-
-AddEventHandler('murtaza:barrier', function()
-	local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), true))
-	local heading = GetEntityHeading(GetPlayerPed(-1))
-	
-	RequestModel('prop_barrier_work05')
-	
-	while not HasModelLoaded('prop_barrier_work05') do
-		Citizen.Wait(1)
-	end
-	
-	local barrier = CreateObject('prop_barrier_work05', x, y, z-2, true, true, true)
-	PlaceObjectOnGroundProperly(barrier)
-	SetEntityHeading(barrier, heading)
-	notification('~g~The barrier has been placed!')
-end)
 
 function notification(msg)
 	SetNotificationTextEntry("STRING")
@@ -1550,20 +451,6 @@ function SetSpikesOnGround1()
 		SetEntityHeading(spike, heading)
 	notification('~g~The Spikestrip has been placed!')
 end
-
---[[function SetSpikesOnGround()
-    x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), true))
-
-    spike = GetHashKey("P_ld_stinger_s")
-
-    RequestModel(spike)
-    while not HasModelLoaded(spike) do
-      Citizen.Wait(1)
-    end
-
-    local object = CreateObject(spike, x+1, y, z-2, true, true, false) -- x+1
-    PlaceObjectOnGroundProperly(object)
-end--]]
 
 Citizen.CreateThread(function()
   while true do
@@ -1618,9 +505,9 @@ Citizen.CreateThread( function()
 	SetNuiFocus( false )
 
 	while true do 
-		-- Control ID 20 is the 'Z' key by default 
+		-- Control ID 244 is the 'M' key by default 
 		-- Use https://wiki.fivem.net/wiki/Controls to find a different key 
-		if ( IsControlJustReleased( 0, 48 ) or IsDisabledControlJustReleased( 0, 48 ) ) and GetLastInputMethod( 0 ) then 
+		if ( IsControlJustReleased( 0, 244 ) or IsDisabledControlJustReleased( 0, 48 ) ) and GetLastInputMethod( 0 ) then 
 			ToggleActionMenu()
 		end 
 
@@ -1640,7 +527,7 @@ Citizen.CreateThread( function()
 end )
 
 function chatPrint( msg )
-	TriggerEvent( 'chatMessage', "Essex RolePlay", { 255, 25, 25 }, msg )
+	TriggerEvent( 'chatMessage', "M Menu", { 255, 25, 25 }, msg )
 end
 
 --Hands Up Start
@@ -1678,7 +565,7 @@ function loadAnimDict( dict )
 end
  
 RegisterNetEvent( 'KneelHU' )
-TriggerEvent( 'KneelHU' )
+--TriggerEvent( 'KneelHU' )
 AddEventHandler( 'KneelHU', function()
     local player = GetPlayerPed( -1 )
     if ( DoesEntityExist( player ) and not IsEntityDead( player )) then
@@ -3547,51 +2434,7 @@ local ped = GetPlayerPed( -1 )
     end 
 end )
 
--- Civ Emotes End --
---[[
-RegisterNetEvent('Engine')
- 
-local vehicles = {}
-local State = {}
- 
-Citizen.CreateThread(function()
-    while true do
-        Citizen.Wait(0)
-        if GetSeatPedIsTryingToEnter(GetPlayerPed(-1)) == -1 and not table.contains(vehicles, GetVehiclePedIsTryingToEnter(GetPlayerPed(-1))) then
-            table.insert(vehicles, GetVehiclePedIsTryingToEnter(GetPlayerPed(-1)))
-            table.insert(State, IsVehicleEngineOn(GetVehiclePedIsTryingToEnter(GetPlayerPed(-1))))
-        elseif IsPedInAnyVehicle(GetPlayerPed(-1), false) and not table.contains(vehicles, GetVehiclePedIsIn(GetPlayerPed(-1), false)) then
-            table.insert(vehicles, GetVehiclePedIsIn(GetPlayerPed(-1), false))
-            table.insert(State, IsVehicleEngineOn(GetVehiclePedIsIn(GetPlayerPed(-1), false)))
-        end
-        for i = 1, tablelength(vehicles) do
-            if (GetPedInVehicleSeat(vehicles[i], -1) == GetPlayerPed(-1)) or IsVehicleSeatFree(vehicles[i], -1) then
-                SetVehicleEngineOn(vehicles[i], State[i], State[i], State[i])
-            end
-        end
-    end
-end)
- 
-AddEventHandler('Engine', function()
-    local veh
-    local StateIndex
-    for i = 1, tablelength(vehicles) do
-        if vehicles[i] == GetVehiclePedIsIn(GetPlayerPed(-1), false) then
-            veh = vehicles[i]
-            StateIndex = i
-        end
-    end
-    if IsPedInAnyVehicle(GetPlayerPed(-1), false) then
-        if (GetPedInVehicleSeat(veh, -1) == GetPlayerPed(-1)) then
-            if IsVehicleEngineOn(veh) then
-                State[StateIndex] = false
-            else
-                State[StateIndex] = true
-            end
-        end
-    end
-end)
- --]]
+-- civ emotes end
 
 function EngineToggle()
     player = GetPlayerPed(-1)
@@ -3626,98 +2469,3 @@ function table.contains(table, element)
   return false
 end
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-RegisterNetEvent('Breath')
-TriggerEvent( 'Breath' )
-AddEventHandler("Breath", function(results)
-
-	local dots = ". . . ."
-	local timer = 0
-		
-	for timer=0,5,1 do
-		SetNotificationTextEntry("STRING")
-		AddTextComponentString("~b~~h~Breathalyzing~h~~n~~c~"..dots)
-		local notify = DrawNotification(false, false)
-		Citizen.Wait(1000)
-		RemoveNotification(notify)
-		dots = dots.." . . . ."
-	end
-		    
-	if (results < "0.08") then
-		SetNotificationTextEntry("STRING")
-		AddTextComponentString("~b~~h~BAC Results:~h~~n~~g~ "..results.."%")
-		local notify = DrawNotification(false, false)
-	elseif (results >= "0.08") then
-		SetNotificationTextEntry("STRING")
-		AddTextComponentString("~b~~h~BAC Results:~h~~n~~r~"..results.."%")
-		local notify = DrawNotification(false, false)
-	elseif (results == nil) then
-		SetNotificationTextEntry("STRING")
-		AddTextComponentString("~b~~h~BAC Results:~h~~n~~g~ 0.000%")
-		local notify = DrawNotification(false, false)
-	end
-
-	
-end)
-
-
-	-- Allows for server to client calls --
-
-RegisterNetEvent("Breath")
-RegisterNetEvent("NoResults")
-RegisterNetEvent("Bac")
-RegisterNetEvent("breathNearby")
-
-	-- Chat Message for setting BAC --
-	
-
-AddEventHandler("Bac", function()
-	SetNotificationTextEntry("STRING")
-	AddTextComponentString("~g~BAC Set!")
-	DrawNotification(false, false)
-end)
-
-AddEventHandler("breathNearby", function()
-local ped = GetPlayerPed(-1)
-	local nearestPlayer = GetNearestPlayerToEntity(ped)
-	local entityType = GetEntityType(ped)
-	
-	shortestDistance = 2
-	closestId = 0
-	
-	for id = 0, 32 do
-        if NetworkIsPlayerActive( id ) and GetPlayerPed(id) ~= GetPlayerPed(-1) then
-			ped1 = GetPlayerPed( id )
-			local x,y,z = table.unpack(GetEntityCoords(ped))
-                if (GetDistanceBetweenCoords(GetEntityCoords(ped1), x,y,z) <  shortestDistance) then
-					
-					shortestDistance = GetDistanceBetweenCoords(GetEntityCoords(ped), x,y,z)
-					closestId = GetPlayerServerId(id)	
-							
-			
-				end
-				
-        end		
-	end
-	TriggerServerEvent("returnData", closestId)
-end)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
