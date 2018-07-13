@@ -1,3 +1,7 @@
+
+
+
+
 --[[------------------------------------------------------------------------
 
 	ActionMenu 
@@ -56,236 +60,95 @@ end
 	variable data. 
 ------------------------------------------------------------------------]]--
 RegisterNUICallback( "ButtonClick", function( data, cb ) 
+	if ( data == "engine" ) then 
+		EngineToggle()
+		
 
-   -- [Civ Toolbox]
+	elseif ( data == "carfix" ) then
+ToggleActionMenu()
+		return
+		carfix()
+                
+		
+	elseif ( data == "cleancar") then
+ToggleActionMenu()
+		return
+		cleancar()
 
-	if ( data == "hands" ) then 
-		TriggerEvent( 'Handsup' )
-	elseif ( data == "kneel" ) then 
-		TriggerEvent( 'KneelHU')
 
-   -- [Civ Toolbox]
+	elseif ( data == "dvslet") then
+		ToggleActionMenu()
+		return
+		dvslet()
+		
 
-   -- [LEO Toolbox]
+	elseif ( data == "dropweap") then
+ToggleActionMenu()
+		return
+		dropweap()
+		
+
+	elseif ( data == "rollwindow") then
+
+		ToggleActionMenu()
+		return
+		dropwindow()
+
+	elseif ( data == "rollwindow2") then
+
+		ToggleActionMenu()
+		return
+		dropwindow2()
+
 	elseif ( data == "cuff") then
+
 		cuff()
-	elseif ( data == "drag") then
+
+	elseif ( data == "handsup_knees") then
+
+		ToggleActionMenu()
+		return
+		TriggerEvent("KneelHU")
+
+	elseif ( data == "DragPlayer") then
+
 		ToggleActionMenu()
 		return
 		DragPlayer()
-	elseif ( data == "seat") then
+
+	elseif ( data == "PutInVehicle") then
+
 		ToggleActionMenu()
 		return
 		PutInVehicle()
-	elseif ( data == "unseat") then
+
+	elseif ( data == "UnseatVehicle") then
+
 		ToggleActionMenu()
 		return
 		UnseatVehicle()
-	elseif ( data == "radar" ) then 
-        TriggerEvent( 'wk:radarRC' )
-	elseif ( data == "radio" ) then
-	    TriggerEvent( 'Radio' )
-	elseif ( data == "spikes1" ) then 
-	    TriggerEvent( 'dspikes' )
-	elseif ( data == "dropweap") then
-    ToggleActionMenu()
-		return
-		     dropweap()
-	-- [LEO Toolbox]
 	
-	--elseif ( data == "breath" ) then
-	--	TriggerEvent( "breath" )
-	--elseif ( data == "setbac" ) then 
-	--	TriggerEvent( "/bacset" )
--- BAC DISABLED DUE TO NIC NOT WANTING IT RELEASED!!!
-			-- IF YOU HAVE THE CODE DM ME ON DISCORD FOR A HOW TO PUT IT IN THE MENU!
-	
-
-  -- [Vehicle]
-    	
-	elseif ( data == "engine" ) then 
-		EngineToggle()
-	elseif ( data == "trunk" ) then 
-		TriggerEvent( "openTrunk" )
-	elseif ( data == "hood" ) then 
-		TriggerEvent( "openHood" )
-	elseif ( data == "fleft" ) then 
-		TriggerEvent( "frontLeft" )
-	elseif ( data == "fright" ) then 
-		TriggerEvent( "frontRight" )
-	elseif ( data == "rleft" ) then 
-		TriggerEvent( "rearLeft" )
-	elseif ( data == "rright" ) then
-		TriggerEvent( "rearRight" )
-	elseif ( data == "fwindows" ) then 
-		TriggerEvent( "frontWindow" )
-	elseif ( data == "rwindows" ) then 
-		TriggerEvent( "rearWindow" )
-	elseif ( data == "delete" ) then
-	    TriggerEvent( 'wk:deleteVehicle' )
-
-  -- [Vehicle]
-  
-  --[[
-HOW TO ADD YOUR OWN SPAWN NAMES!
-			
-	ADD THE CODE: 
-	elseif ( data == "police2" ) then 
-		TriggerEvent( "police2" )		
-			to the line before elsif (data == "delete" ) then
-	
-			
-			
---]]
-
-	elseif ( data == "police2" ) then 
-		TriggerEvent( "police2" )		
-	elseif ( data == "delete" ) then
-	    TriggerEvent( 'wk:deleteVehicle' )
-  
-  
-
-   -- [Adverts]
-
-   elseif ( data == "ad1" ) then 
-		TriggerEvent( "ad1" )
-	elseif ( data == "ad2" ) then 
-		TriggerEvent( "ad2" )
-	elseif ( data == "ad3" ) then 
-		TriggerEvent( "ad3" )
-	elseif ( data == "ad4" ) then 
-		TriggerEvent( "ad4" )
-	elseif ( data == "ad5" ) then 
-		TriggerEvent( "ad5" )
-	elseif ( data == "ad6" ) then 
-		TriggerEvent( "ad6" )
-	elseif ( data == "ad7" ) then 
-		TriggerEvent( "ad7" )
-	elseif ( data == "ad8" ) then 
-		TriggerEvent( "ad8" )
-	elseif ( data == "ad9" ) then 
-		TriggerEvent( "ad9" )
-	elseif ( data == "ad10" ) then 
-		TriggerEvent( "ad10" )
-	elseif ( data == "ad11" ) then 
-		TriggerEvent( "ad11" )
-	elseif ( data == "ad12" ) then 
-		TriggerEvent( "ad12" )
-	elseif ( data == "ad13" ) then 
-		TriggerEvent( "ad13" )
-	elseif ( data == "ad14" ) then 
-		TriggerEvent( "ad14" )
-	elseif ( data == "ad15" ) then 
-		TriggerEvent( "ad15" )
-	elseif ( data == "ad16" ) then 
-		TriggerEvent( "ad16" )
-	elseif ( data == "ad17" ) then 
-		TriggerEvent( "ad17" )
-	elseif ( data == "ad18" ) then 
-		TriggerEvent( "ad18" )
-	elseif ( data == "ad19" ) then 
-		TriggerEvent( "ad19" )
-	elseif ( data == "ad20" ) then 
-		TriggerEvent( "ad20" )
-	elseif ( data == "ad21" ) then 
-		TriggerEvent( "ad21" )
-    
-   -- [Adverts]
-
-   -- [Emotes]
-
-    elseif ( data == "radiogun" ) then 
-		TriggerEvent( "RadioGunPoint" )
-	elseif ( data == "stance" ) then 
-		TriggerEvent( "Stance" )
-	elseif ( data == "investigate" ) then 
-		TriggerEvent( "Investigate" )
-	elseif ( data == "holster" ) then 
-	    TriggerEvent( 'Holster' )
-    elseif ( data == "citation" ) then 
-	    TriggerEvent( 'Citation' )
-	elseif ( data == "notes" ) then 
-	    TriggerEvent( 'Notes' )
-	elseif ( data == "traffic" ) then 
-	    TriggerEvent( 'Traffic' )
-	elseif ( data == "medic" ) then 
-	    TriggerEvent( 'Medic' )
-	elseif ( data == "weld" ) then 
-	    TriggerEvent( 'Weld' )
-	elseif ( data == "smoke" ) then 
-	    TriggerEvent( 'Smoke' )
-	elseif ( data == "party" ) then 
-	    TriggerEvent( 'Party' )
-	elseif ( data == "drink" ) then 
-	    TriggerEvent( 'Drink' )
-	elseif ( data == "pushups" ) then 
-	    TriggerEvent( 'Pushups' )
-	elseif ( data == "phone" ) then 
-	    TriggerEvent( 'Phone' )
-	elseif ( data == "injured" ) then 
-	    TriggerEvent( 'Injured' )
-	elseif ( data == "weed" ) then 
-	    TriggerEvent( 'Weed' )
-	elseif ( data == "coffee" ) then 
-	    TriggerEvent( 'Coffee' )
-	elseif ( data == "photo" ) then 
-	    TriggerEvent( 'Photo' )
-	elseif ( data == "binoculars" ) then 
-	    TriggerEvent( 'Binoculars' )
-	elseif ( data == "situps" ) then 
-	    TriggerEvent( 'Situps' )
-	elseif ( data == "film" ) then 
-	    TriggerEvent( 'Film' )
-	elseif ( data == "weights" ) then 
-	    TriggerEvent( 'Weights' )
-	elseif ( data == "flex" ) then 
-	    TriggerEvent( 'Flex' )
-	elseif ( data == "cancel" ) then 
-	    TriggerEvent( 'cancelEmote' )
-
-   -- [Emotes]
-   
-   
-   	elseif ( data == "spike" ) then 
-	    TriggerEvent( 'c_setSpike' )
-   	elseif ( data == "spike1" ) then 
-	    TriggerEvent( 'c_deleteSpike' )
-	elseif ( data == "cone2" ) then
-		TriggerEvent( 'cone2' )
-	elseif ( data == "cone2r" ) then
-		TriggerEvent( 'cone2r' )
-	elseif ( data == "barrier" ) then
-		TriggerEvent( 'barrier' )
-	elseif ( data == "barrier_rem" ) then
-		TriggerEvent( 'barrier_rem' )
-   
-
-   -- [Outfits]
-
-    elseif ( data == "police" ) then 
-		TriggerEvent( "lspdOutfit" )
-    elseif ( data == "sheriff" ) then 
-		TriggerEvent( "bcsoOutfit" )
-    elseif ( data == "hp" ) then 
-		TriggerEvent( "sahpOutfit" )
-	elseif ( data == "hp2" ) then 
-		TriggerEvent( "sahpOutfit12" )
-	elseif ( data == "lspd2" ) then 
-		TriggerEvent( "lspdOutfit1" )
-    elseif ( data == "fire" ) then 
-		TriggerEvent( "fireOutfit" )
-	elseif ( data == "medic" ) then 
-		TriggerEvent( "medicOutfit" )
-
+		
 	elseif ( data == "exit" ) then 
 		-- We toggle the ActionMenu and return here, otherwise the function 
 		-- call below would be executed too, which would just open the menu again 
 		ToggleActionMenu()
-		return 
+		return
+
+	elseif ( data == "short" ) then
+		short()
+	
+	elseif ( data == "medium" ) then
+		medium()
+
+
+	elseif ( data == "long" ) then
+		long()
+
 	end 
 
 	-- This will only be called if any button other than the exit button is pressed
---	ToggleActionMenu() Uncomment this if you want the menu to close, after selecting an option.
+	ToggleActionMenu()
 end )
 
 
@@ -295,219 +158,14 @@ end )
 	uses the input blocking found in the ES Banking resource, credits to 
 	the authors.
 ------------------------------------------------------------------------]]--
-
-
-
---[[
-add police vehs here:
-
-RegisterNetEvent('yourpdcarspawncode')
-TriggerEvent( 'yourpdcarspawncode' )
-AddEventHandler('yourpdcarspawncode', function()
-local hash = GetHashKey("yourpdcarspawncode")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-add that under police2
-
-
-
---]]
-
-
-
-RegisterNetEvent('police2')
-TriggerEvent( 'police2' )
-AddEventHandler('police2', function()
-local hash = GetHashKey("police2")
-
-RequestModel(hash)
-
-while not HasModelLoaded(hash) do
-RequestModel(hash)
-Citizen.Wait(0)
-end
-
-local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-local vehicle = CreateVehicle(hash, x + 2, y + 2, z + 1, 0.0, true, false)
-end)
-
-
--- REPLACE THIS LINE WITH YOUR POLICE SPAWN CODES!!!
-
-RegisterNetEvent('cone2')
-AddEventHandler('cone2', function()
-    cone2()
-end)
-
-RegisterNetEvent('cone2r')
-AddEventHandler('cone2r', function()
-    Removecone2()
-end)
-
-RegisterNetEvent('barrier')
-AddEventHandler('barrier', function()
-    barrier()
-end)
-
-RegisterNetEvent('barrier_rem')
-AddEventHandler('barrier_rem', function()
-    Removebarrier()
-end)
-
-
---[[function cone2()
-	local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), true))
-	local heading = GetEntityHeading(GetPlayerPed(-1))
-	
-	RequestModel('prop_mp_cone_01')
-	
-	while not HasModelLoaded('prop_mp_cone_01') do
-		Citizen.Wait(1)
-	end
-	
-	local cone2 = CreateObject(GetHashKey("prop_mp_cone_01"), x, y, z-2, true, true, true)
-	PlaceObjectOnGroundProperly(cone)
-	SetEntityHeading(cone, heading)
-	notification('~g~The cone has been placed!')
-end--]]
-
-function cone2()
-		local pP = GetPlayerPed(-1)
-		local x, y, z = table.unpack(GetEntityCoords(pP, true))
-		local heading = GetEntityHeading(pP)
-		local cone2 = CreateObject(GetHashKey('prop_mp_cone_01'), x, y, z-2, true, true, true)
-		PlaceObjectOnGroundProperly(cone2)
-		SetEntityHeading(cone2, heading)
-	notification('~g~The cone has been placed!')
-end
-
-function Removecone2()
-   local ped = GetPlayerPed(-1)
-   local veh = GetVehiclePedIsIn(ped, false)
-   local vehCoord = GetEntityCoords(ped)
-   if DoesObjectOfTypeExistAtCoords(vehCoord["x"], vehCoord["y"], vehCoord["z"], 0.9, GetHashKey("prop_mp_cone_01"), true) then
-    local  cone2 = GetClosestObjectOfType(vehCoord["x"], vehCoord["y"], vehCoord["z"], 0.9, GetHashKey("prop_mp_cone_01"), false, false, false)
-      SetEntityAsMissionEntity(cone2, true, true)
-      DeleteObject(cone2)
-	  notification('~r~The cone has been Removed!')
-   end
-end	
-
-
-function barrier()
-		local pP = GetPlayerPed(-1)
-		local x, y, z = table.unpack(GetEntityCoords(pP, true))
-		local heading = GetEntityHeading(pP)
-		local barrier = CreateObject(GetHashKey('prop_barrier_work05'), x, y, z-2, true, true, true)
-		PlaceObjectOnGroundProperly(barrier)
-		SetEntityHeading(barrier, heading)
-	notification('~g~The barrier has been placed!')
-end
-
-function Removebarrier()
-   local ped = GetPlayerPed(-1)
-   local veh = GetVehiclePedIsIn(ped, false)
-   local vehCoord = GetEntityCoords(ped)
-   if DoesObjectOfTypeExistAtCoords(vehCoord["x"], vehCoord["y"], vehCoord["z"], 0.9, GetHashKey("prop_barrier_work05"), true) then
-local  barrier = GetClosestObjectOfType(vehCoord["x"], vehCoord["y"], vehCoord["z"], 0.9, GetHashKey("prop_barrier_work05"), false, false, false)
-      SetEntityAsMissionEntity(barrier, true, true)
-      DeleteObject(barrier)
-	  notification('~r~The Barrier has been Removed!')
-   end
-end	
-
-function notification(msg)
-	SetNotificationTextEntry("STRING")
-	AddTextComponentString(msg)
-	DrawNotification(false, false)
-end
-
-RegisterNetEvent('c_setSpike')
-AddEventHandler('c_setSpike', function()
-    SetSpikesOnGround1()
-end)
-
-RegisterNetEvent('c_deleteSpike')
-AddEventHandler('c_deleteSpike', function()
-    RemoveSpikesOnGround2()
-end)
-
-function SetSpikesOnGround1()
-		local pP = GetPlayerPed(-1)
-		local x, y, z = table.unpack(GetEntityCoords(pP, true))
-		local heading = GetEntityHeading(pP)
-		local spike = CreateObject(GetHashKey('P_ld_stinger_s'), x, y, z-2, true, true, true)
-	--	PlaceObjectOnGroundProperly(spike)
-		SetEntityHeading(spike, heading)
-	notification('~g~The Spikestrip has been placed!')
-end
-
-Citizen.CreateThread(function()
-  while true do
-    Citizen.Wait(0)
-    local ped = GetPlayerPed(-1)
-    local veh = GetVehiclePedIsIn(ped, false)
-    local vehCoord = GetEntityCoords(veh)
-    if IsPedInAnyVehicle(ped, false) then
-      if DoesObjectOfTypeExistAtCoords(vehCoord["x"], vehCoord["y"], vehCoord["z"], 0.9, GetHashKey("P_ld_stinger_s"), true) then
-         SetVehicleTyreBurst(veh, 0, true, 1000.0)
-         SetVehicleTyreBurst(veh, 1, true, 1000.0)
-         SetVehicleTyreBurst(veh, 2, true, 1000.0)
-         SetVehicleTyreBurst(veh, 3, true, 1000.0)
-         SetVehicleTyreBurst(veh, 4, true, 1000.0)
-         SetVehicleTyreBurst(veh, 5, true, 1000.0)
-         SetVehicleTyreBurst(veh, 6, true, 1000.0)
-         SetVehicleTyreBurst(veh, 7, true, 1000.0)
-         RemoveSpike()
-       end
-     end
-   end
-end)
-
-function RemoveSpike()
-   local ped = GetPlayerPed(-1)
-   local veh = GetVehiclePedIsIn(ped, false)
-   local vehCoord = GetEntityCoords(veh)
-   if DoesObjectOfTypeExistAtCoords(vehCoord["x"], vehCoord["y"], vehCoord["z"], 0.9, GetHashKey("P_ld_stinger_s"), true) then
-      spike = GetClosestObjectOfType(vehCoord["x"], vehCoord["y"], vehCoord["z"], 0.9, GetHashKey("P_ld_stinger_s"), false, false, false)
-      SetEntityAsMissionEntity(spike, true, true)
-      DeleteObject(spike)
-   end
-end
-
-function RemoveSpikesOnGround2()
-   local ped = GetPlayerPed(-1)
-   local veh = GetVehiclePedIsIn(ped, false)
-   local vehCoord = GetEntityCoords(ped)
-   if DoesObjectOfTypeExistAtCoords(vehCoord["x"], vehCoord["y"], vehCoord["z"], 0.9, GetHashKey("P_ld_stinger_s"), true) then
-      spike = GetClosestObjectOfType(vehCoord["x"], vehCoord["y"], vehCoord["z"], 0.9, GetHashKey("P_ld_stinger_s"), false, false, false)
-      SetEntityAsMissionEntity(spike, true, true)
-      DeleteObject(spike)
-	  notification('~r~The Spikestrip has been Removed!')
-   end
-end	
-
-
-
-
 Citizen.CreateThread( function()
 	-- This is just in case the resources restarted whilst the NUI is focused. 
 	SetNuiFocus( false )
 
 	while true do 
-		-- Control ID 244 is the 'M' key by default 
+		-- Control ID 20 is the 'Z' key by default 
 		-- Use https://wiki.fivem.net/wiki/Controls to find a different key 
-		if ( IsControlJustReleased( 0, 244 ) or IsDisabledControlJustReleased( 0, 48 ) ) and GetLastInputMethod( 0 ) then 
+		if ( IsControlJustPressed( 1, 244 ) ) then 
 			ToggleActionMenu()
 		end 
 
@@ -527,92 +185,26 @@ Citizen.CreateThread( function()
 end )
 
 function chatPrint( msg )
-	TriggerEvent( 'chatMessage', "M Menu", { 255, 25, 25 }, msg )
-end
-
---Hands Up Start
-
-RegisterNetEvent("Handsup")
-AddEventHandler("Handsup", function()
-	local lPed = GetPlayerPed(-1)
-	if DoesEntityExist(lPed) then
-		Citizen.CreateThread(function()
-			RequestAnimDict("random@mugging3")
-			while not HasAnimDictLoaded("random@mugging3") do
-				Citizen.Wait(100)
-			end
-			
-			if IsEntityPlayingAnim(lPed, "random@mugging3", "handsup_standing_base", 3) then
-				ClearPedSecondaryTask(lPed)
-				SetEnableHandcuffs(lPed, false)
-			else
-				TaskPlayAnim(lPed, "random@mugging3", "handsup_standing_base", 8.0, -8, -1, 49, 0, 0, 0, 0)
-				SetEnableHandcuffs(lPed, true)
-			end		
-		end)
-	end
-end)
-
---Hands Up End
-
---Kneel Handsup Start
- 
-function loadAnimDict( dict )
-    while ( not HasAnimDictLoaded( dict ) ) do
-        RequestAnimDict( dict )
-        Citizen.Wait( 5 )
-    end
-end
- 
-RegisterNetEvent( 'KneelHU' )
---TriggerEvent( 'KneelHU' )
-AddEventHandler( 'KneelHU', function()
-    local player = GetPlayerPed( -1 )
-    if ( DoesEntityExist( player ) and not IsEntityDead( player )) then
-        loadAnimDict( "random@arrests" )
-        loadAnimDict( "random@arrests@busted" )
-        if ( IsEntityPlayingAnim( player, "random@arrests@busted", "idle_a", 3 ) ) then
-            TaskPlayAnim( player, "random@arrests@busted", "exit", 8.0, 1.0, -1, 2, 0, 0, 0, 0 )
-            Wait (3000)
-            TaskPlayAnim( player, "random@arrests", "kneeling_arrest_get_up", 8.0, 1.0, -1, 128, 0, 0, 0, 0 )
-        else
-            TaskPlayAnim( player, "random@arrests", "idle_2_hands_up", 8.0, 1.0, -1, 2, 0, 0, 0, 0 )
-            Wait (4000)
-            TaskPlayAnim( player, "random@arrests", "kneeling_arrest_idle", 8.0, 1.0, -1, 2, 0, 0, 0, 0 )
-            Wait (500)
-            TaskPlayAnim( player, "random@arrests@busted", "enter", 8.0, 1.0, -1, 2, 0, 0, 0, 0 )
-            Wait (1000)
-            TaskPlayAnim( player, "random@arrests@busted", "idle_a", 8.0, 1.0, -1, 9, 0, 0, 0, 0 )
-        end    
-    end
-end )
- 
-Citizen.CreateThread(function()
-    while true do
-        Citizen.Wait(0)
-        if IsEntityPlayingAnim(GetPlayerPed(PlayerId()), "random@arrests@busted", "idle_a", 3) then
-            DisableControlAction(1, 140, true)
-            DisableControlAction(1, 141, true)
-            DisableControlAction(1, 142, true)
-            DisableControlAction(0,21,true)
-        end
-    end
-end)
-
---Kneel Handsup End
+	TriggerEvent( 'chatMessage', "ActionMenu", { 255, 255, 255 }, msg )
+end 
 
 
-function drawNotification(text) --Just Don't Edit!
-    SetNotificationTextEntry("STRING")
-    AddTextComponentString(text)
-    DrawNotification(false, false)
-end
 
--- Front Windows Start
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+function dropwindow()
 
 local windowup = true
-RegisterNetEvent("frontWindow")
-AddEventHandler('frontWindow', function()
     local playerPed = GetPlayerPed(-1)
     if IsPedInAnyVehicle(playerPed, false) then
         local playerCar = GetVehiclePedIsIn(playerPed, false)
@@ -621,26 +213,16 @@ AddEventHandler('frontWindow', function()
 		
 			if ( windowup ) then
 				RollDownWindow(playerCar, 0)
-				RollDownWindow(playerCar, 1)
-				drawNotification("You rolled down your front windows.")
+				TriggerEvent('chatMessage', '', {255,0,0}, 'Windows down')
 				windowup = false
-			else
-				RollUpWindow(playerCar, 0)
-				RollUpWindow(playerCar, 1)
-				drawNotification("You rolled up your front windows.")
-				windowup = true
 			end
 		end
 	end
-end )
+end 
 
--- Front Windows End
-
--- Rear Windows Start
+function dropwindow2()
 
 local windowup = true
-RegisterNetEvent("rearWindow")
-AddEventHandler('rearWindow', function()
     local playerPed = GetPlayerPed(-1)
     if IsPedInAnyVehicle(playerPed, false) then
         local playerCar = GetVehiclePedIsIn(playerPed, false)
@@ -648,247 +230,110 @@ AddEventHandler('rearWindow', function()
             SetEntityAsMissionEntity( playerCar, true, true )
 		
 			if ( windowup ) then
-				RollDownWindow(playerCar, 2)
-				RollDownWindow(playerCar, 3)
-				drawNotification("~w~You rolled down your rear windows.")
-				windowup = false
-			else
-				RollUpWindow(playerCar, 2)
-				RollUpWindow(playerCar, 3)
-				drawNotification("~w~You rolled up your rear windows.")
+				RollUpWindow(playerCar, 0)
+				TriggerEvent('chatMessage', '', {255,0,0}, 'Windows up')
 				windowup = true
 			end
 		end
 	end
-end )
+end 
 
--- Rear Windows End
 
---[LEO Animations Start]
-
--- Hand on Radio Start
-
-RegisterNetEvent('Radio')
-AddEventHandler('Radio', function()
-
-local ped = GetPlayerPed( -1 )
-    
-if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-
-Citizen.CreateThread( function()
-	RequestAnimDict( "random@arrests" )
-	   while ( not HasAnimDictLoaded( "random@arrests" ) ) do 
-                Citizen.Wait( 100 )
-            end
-				if IsEntityPlayingAnim(ped, "random@arrests", "generic_radio_chatter", 3) then
-				ClearPedSecondaryTask(ped)
-				SetCurrentPedWeapon(ped, GetHashKey("GENERIC_RADIO_CHATTER"), true)
-				else
-				TaskPlayAnim(ped, "random@arrests", "generic_radio_chatter", 8.0, 2.5, -1, 49, 0, 0, 0, 0 )
-				SetCurrentPedWeapon(ped, GetHashKey("GENERIC_RADIO_CHATTER"), true)
-            end 
-        end )
-    end 
-end )
-
--- Hand on Radio End
-
--- Hand on Radio W/ Gun Start
-
-function loadAnimDict( dict )
-    while ( not HasAnimDictLoaded( dict ) ) do
-        RequestAnimDict( dict )
-        Citizen.Wait( 5 )
+function EngineToggle()
+    player = GetPlayerPed(-1)
+    local vehicle = GetVehiclePedIsIn(player, false)
+    if IsVehicleEngineOn(vehicle) then
+        --SetVehiclePetrolTankHealth( vehicle, 0 )
+        SetVehicleEngineOn(vehicle, false, false, true)
+    else
+	SetVehicleEngineOn(GetVehiclePedIsIn(GetPlayerPed(-1), false), true)
+        --SetVehiclePetrolTankHealth( vehicle, 1000 )
     end
 end
 
-RegisterNetEvent( 'RadioGunPoint' )
-AddEventHandler( 'RadioGunPoint', function()
-	local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped )) then
-        loadAnimDict( "random@arrests" )
-        if ( IsEntityPlayingAnim( ped, "random@arrests", "radio_chatter", 3 ) ) then
-				ClearPedSecondaryTask(ped)
-				SetEnableHandcuffs(ped, false)
-				SetCurrentPedWeapon(ped, GetHashKey("WEAPON_UNARMED"), true)
+
+function carfix()
+local playerPed = GetPlayerPed(-1)
+	if IsPedInAnyVehicle(playerPed, false) then
+		local vehicle = GetVehiclePedIsIn(playerPed, false)
+		SetVehicleEngineHealth(vehicle, 1000)
+		SetVehicleEngineOn( vehicle, true, true )
+		SetVehicleFixed(vehicle)
+	else
+  drawNotification("Mechanic: Vehicle repaired ")
+	end
+end
+
+
+
+function dvslet() 
+local distanceToCheck = 5.0
+
+    local ped = GetPlayerPed( -1 )
+
+    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
+        local pos = GetEntityCoords( ped )
+
+        if ( IsPedSittingInAnyVehicle( ped ) ) then 
+            local vehicle = GetVehiclePedIsIn( ped, false )
+
+            if ( GetPedInVehicleSeat( vehicle, -1 ) == ped ) then 
+                SetEntityAsMissionEntity( vehicle, true, true )
+                deleteCar( vehicle )
+
+                if ( DoesEntityExist( vehicle ) ) then 
+                	drawNotification( "~r~Unable to delete vehicle, try again." )
+                else 
+                	drawNotification( "~g~Vehicle deleted successfully!" )
+                end 
+            else 
+                drawNotification( "You must be in the driver's seat!" )
+            end 
         else
-				TaskPlayAnim(ped, "random@arrests", "radio_chatter", 8.0, 2.5, -1, 49, 0, 0, 0, 0 )
-				SetCurrentPedWeapon(ped, GetHashKey("WEAPON_PISTOL"), true)
-        end    
+            local playerPos = GetEntityCoords( ped, 1 )
+            local inFrontOfPlayer = GetOffsetFromEntityInWorldCoords( ped, 0.0, distanceToCheck, 0.0 )
+            local vehicle = GetVehicleInDirection( playerPos, inFrontOfPlayer )
+
+            if ( DoesEntityExist( vehicle ) ) then 
+                SetEntityAsMissionEntity( vehicle, true, true )
+                deleteCar( vehicle )
+
+                if ( DoesEntityExist( vehicle ) ) then 
+                	drawNotification( "~r~Unable to delete vehicle, try again." )
+                else 
+                	drawNotification( "~g~Vehicle deleted Successfully" )
+                end 
+            else 
+                drawNotification( "You must be in or near a vehicle to delete it." )
+            end 
+        end 
+    end 
+end
+
+function deleteCar( entity )
+    Citizen.InvokeNative( 0xEA386986E786A54F, Citizen.PointerValueIntInitialized( entity ) )
+end
+
+-- Gets a vehicle in a certain direction
+-- Credit to Konijima
+function GetVehicleInDirection( coordFrom, coordTo )
+    local rayHandle = CastRayPointToPoint( coordFrom.x, coordFrom.y, coordFrom.z, coordTo.x, coordTo.y, coordTo.z, 10, GetPlayerPed( -1 ), 0 )
+    local _, _, _, _, vehicle = GetRaycastResult( rayHandle )
+    return vehicle
+end
+
+
+
+function cleancar()
+local playerPed = GetPlayerPed(-1)
+    if IsPedInAnyVehicle(playerPed, false) then
+        local vehicle = GetVehiclePedIsIn(playerPed, false)
+        SetVehicleDirtLevel(vehicle, 0)
+        drawNotification("~b~Car isn't dirty")
+    else
+        drawNotification("~o~Car cleaned successfully!")
     end
-end )
- 
-Citizen.CreateThread(function()
-    while true do
-        Citizen.Wait(0)
-        if IsEntityPlayingAnim(GetPlayerPed(PlayerId()), "random@arrests", "radio_chatter", 3) then
-            DisableControlAction(0, 21, true)
-			DisableControlAction(1, 140, true)
-            DisableControlAction(1, 141, true)
-            DisableControlAction(1, 142, true)
-        end
-    end
-end)
-
--- Hand on Radio W/ Gun End
-
--- LEO Stance Start
-
-RegisterNetEvent('Stance')
-AddEventHandler('Stance', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_COP_IDLES", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
--- LEO Stance End
-
--- Investigate Start
-
-RegisterNetEvent('Investigate')
-AddEventHandler('Investigate', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_GUARD_STAND", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
--- Investigate End
-
--- Holster Start
-
-RegisterNetEvent( 'Holster' )
-AddEventHandler( 'Holster', function()
-	local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped )) then
-        loadAnimDict( "move_m@intimidation@cop@unarmed" )
-        if ( IsEntityPlayingAnim( ped, "move_m@intimidation@cop@unarmed", "idle", 3 ) ) then
-				ClearPedSecondaryTask(ped)
-				SetEnableHandcuffs(ped, false)
-				SetCurrentPedWeapon(ped, GetHashKey("WEAPON_UNARMED"), true)
-        else
-				TaskPlayAnim(ped, "move_m@intimidation@cop@unarmed", "idle", 8.0, 2.5, -1, 49, 0, 0, 0, 0 )
-				SetEnableHandcuffs(ped, true)
-				SetCurrentPedWeapon(ped, GetHashKey("WEAPON_UNARMED"), true)
-        end    
-    end
-end )
- 
-Citizen.CreateThread(function()
-    while true do
-        Citizen.Wait(0)
-        if IsEntityPlayingAnim(GetPlayerPed(PlayerId()), "move_m@intimidation@cop@unarmed", "idle", 3) then
-            DisableControlAction(0, 21, true)
-			DisableControlAction(1, 140, true)
-            DisableControlAction(1, 141, true)
-            DisableControlAction(1, 142, true)
-        end
-    end
-end)
-
--- Holster End
-
--- Citation Start
-
-
-RegisterNetEvent('Citation')
-AddEventHandler('Citation', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "CODE_HUMAN_MEDIC_TIME_OF_DEATH", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
--- Citation End
-
--- Take Notes Start
-
-
-RegisterNetEvent('Notes')
-AddEventHandler('Notes', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_CLIPBOARD", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
--- Take Notes End
-
-
--- Welding Start
-
-RegisterNetEvent('Weld')
-AddEventHandler('Weld', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_WELDING", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
--- Welding End
-
--- Direct Traffic Start
-
-
-RegisterNetEvent('Traffic')
-AddEventHandler('Traffic', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_CAR_PARK_ATTENDANT", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
--- Direct Traffic End
-
--- Medic Observe Start
-
-
-RegisterNetEvent('Medic')
-AddEventHandler('Medic', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "CODE_HUMAN_MEDIC_KNEEL", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
--- Medic Observe End
-
--- Cancel Emote
-
-RegisterNetEvent( 'cancelEmote' )
-AddEventHandler( 'cancelEmote', function()
-	local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped )) then
-	    ClearPedSecondaryTask(ped)
-        SetCurrentPedWeapon(ped, GetHashKey("WEAPON_UNARMED"), true)  
-    end
-end )
-
---[LEO Animations End]
-
--- Drop Weapon
+end
 
 function dropweap()
     local ped = PlayerPedId()
@@ -899,9 +344,12 @@ function dropweap()
             TaskPlayAnim(ped, "mp_weapon_drop", "drop_bh", 8.0, 2.0, -1, 0, 2.0, 0, 0, 0 )
             SetPedDropsInventoryWeapon(ped, wep, 0, 2.0, 0, -1)
             SetCurrentPedWeapon(ped, GetHashKey("WEAPON_UNARMED"), true)
-			drawNotification("~w~You dropped your weapon.")
+            drawNotification("~r~Couldn't drop weapon")
+            else
+            drawNotification('Weapon dropped successfully!')
         end
 end
+
 
 function GetPlayers()
     local players = {}
@@ -943,13 +391,13 @@ function drawNotification(text)
 	DrawNotification(false, false)
 end
 
--------------------------------------]
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 local handCuffed = false
-
 local drag = false
 local playerStillDragged = false
 local officerDrag = -1
+
+
 
 function cuff()
 	local t, distance = GetClosestPlayer()
@@ -960,31 +408,6 @@ function cuff()
 	end
 end
 
---[[
-function handcuff()
-	local t, distance = GetClosestPlayer()
-	if(distance ~= -1 and distance < 3) then
-		local lPed = GetPlayerPed(-1)
-	if DoesEntityExist(lPed) then
-		if IsEntityPlayingAnim(lPed, "mp_arresting", "idle", 3) then
-			ClearPedSecondaryTask(lPed)
-			SetEnableHandcuffs(lPed, false)
-			SetCurrentPedWeapon(lPed, GetHashKey("WEAPON_UNARMED"), true)
-			handcuff = false
-		else
-			RequestAnimDict("mp_arresting")
-			while not HasAnimDictLoaded("mp_arresting") do
-				Citizen.Wait(100)
-			end
-
-			TaskPlayAnim(lPed, "mp_arresting", "idle", 8.0, -8, -1, 49, 0, 0, 0, 0)
-			SetEnableHandcuffs(lPed, true)
-			SetCurrentPedWeapon(lPed, GetHashKey("WEAPON_UNARMED"), true)
-			handcuff = true
-		end
-	end
-end)
---]]
 
 RegisterNetEvent('wk_actionmenu:getArrested')
 AddEventHandler('wk_actionmenu:getArrested', function()
@@ -995,6 +418,7 @@ drawNotification("player cuffed")
 		drawNotification("Player uncuffed")
 	end
 end)
+
 
 Citizen.CreateThread(function()
     while true do
@@ -1047,6 +471,7 @@ Citizen.CreateThread(function()
 		end
 end
 end)
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -1134,1338 +559,50 @@ end)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
--- Trunk
-
-RegisterNetEvent( 'openTrunk' )
-AddEventHandler( 'openTrunk', function()
-
-    local ped = PlayerPedId()
-    local veh = GetVehiclePedIsIn(ped, false)
-    if veh ~= nil and veh ~= 0 and veh ~= 1 then
-        if GetVehicleDoorAngleRatio(veh, 5) > 0 then
-            SetVehicleDoorShut(veh, 5, false)
-			drawNotification("~w~You closed your trunk.")
+RegisterNetEvent( 'KneelHU' )
+AddEventHandler( 'KneelHU', function()
+    local player = GetPlayerPed( -1 )
+	if ( DoesEntityExist( player ) and not IsEntityDead( player )) then 
+        loadAnimDict( "random@arrests" )
+		loadAnimDict( "random@arrests@busted" )
+		if ( IsEntityPlayingAnim( player, "random@arrests@busted", "idle_a", 3 ) ) then 
+			TaskPlayAnim( player, "random@arrests@busted", "exit", 8.0, 1.0, -1, 2, 0, 0, 0, 0 )
+			Wait (3000)
+            TaskPlayAnim( player, "random@arrests", "kneeling_arrest_get_up", 8.0, 1.0, -1, 128, 0, 0, 0, 0 )
         else
-            SetVehicleDoorOpen(veh, 5, false, false)
-			drawNotification("~w~You opened your trunk.")
-        end
+            TaskPlayAnim( player, "random@arrests", "idle_2_hands_up", 8.0, 1.0, -1, 2, 0, 0, 0, 0 )
+			Wait (4000)
+            TaskPlayAnim( player, "random@arrests", "kneeling_arrest_idle", 8.0, 1.0, -1, 2, 0, 0, 0, 0 )
+			Wait (500)
+			TaskPlayAnim( player, "random@arrests@busted", "enter", 8.0, 1.0, -1, 2, 0, 0, 0, 0 )
+			Wait (1000)
+			TaskPlayAnim( player, "random@arrests@busted", "idle_a", 8.0, 1.0, -1, 9, 0, 0, 0, 0 )
+        end     
     end
-end, false)
-
--- Hood
-
-
-RegisterNetEvent( 'openHood' )
-AddEventHandler( 'openHood', function()
-
-    local ped = PlayerPedId()
-    local veh = GetVehiclePedIsIn(ped, false)
-    if veh ~= nil and veh ~= 0 and veh ~= 1 then
-        if GetVehicleDoorAngleRatio(veh, 4) > 0 then
-            SetVehicleDoorShut(veh, 4, false)
-			drawNotification("~w~You closed your hood.")
-        else
-            SetVehicleDoorOpen(veh, 4, false, false)
-			drawNotification("~w~You opened your hood.")
-        end
-    end
-end, false)
-
-RegisterNetEvent( 'frontLeft' )
-AddEventHandler( 'frontLeft', function()
-
-    local ped = PlayerPedId()
-    local veh = GetVehiclePedIsIn(ped, false)
-    if veh ~= nil and veh ~= 0 and veh ~= 1 then
-        if GetVehicleDoorAngleRatio(veh, 0) > 0 then
-            SetVehicleDoorShut(veh, 0, false)
-			drawNotification("~w~You closed the front left door.")
-        else
-            SetVehicleDoorOpen(veh, 0, false, false)
-			drawNotification("~w~You opened the front left door.")
-        end
-    end
-end, false)
-
-RegisterNetEvent( 'frontRight' )
-AddEventHandler( 'frontRight', function()
-
-    local ped = PlayerPedId()
-    local veh = GetVehiclePedIsIn(ped, false)
-    if veh ~= nil and veh ~= 0 and veh ~= 1 then
-        if GetVehicleDoorAngleRatio(veh, 1) > 0 then
-            SetVehicleDoorShut(veh, 1, false)
-			drawNotification("~w~You closed the front right door.")
-        else
-            SetVehicleDoorOpen(veh, 1, false, false)
-			drawNotification("~w~You opened the front right door.")
-        end
-    end
-end, false)
-
-RegisterNetEvent( 'rearLeft' )
-AddEventHandler( 'rearLeft', function()
-
-    local ped = PlayerPedId()
-    local veh = GetVehiclePedIsIn(ped, false)
-    if veh ~= nil and veh ~= 0 and veh ~= 1 then
-        if GetVehicleDoorAngleRatio(veh, 2) > 0 then
-            SetVehicleDoorShut(veh, 2, false)
-			drawNotification("~w~You closed the rear left door.")
-        else
-            SetVehicleDoorOpen(veh, 2, false, false)
-			drawNotification("~w~You opened the rear left door.")
-        end
-    end
-end, false)
-
-RegisterNetEvent( 'rearRight' )
-AddEventHandler( 'rearRight', function()
-
-    local ped = PlayerPedId()
-    local veh = GetVehiclePedIsIn(ped, false)
-    if veh ~= nil and veh ~= 0 and veh ~= 1 then
-        if GetVehicleDoorAngleRatio(veh, 3) > 0 then
-            SetVehicleDoorShut(veh, 3, false)
-			drawNotification("~w~You closed the rear right door.")
-        else
-            SetVehicleDoorOpen(veh, 3, false, false)
-			drawNotification("~w~You opened the rear right door.")
-        end
-    end
-end, false)
-
--- [Adverts]
-
--- ADVERTISMENTS
-RegisterNetEvent("ad1")
-AddEventHandler("ad1",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad1', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad1')
-AddEventHandler('displayad1',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_FLOYD", "247", true, 1, "~y~24/7~s~", "");
-DrawNotification(false, true);
-
-end)
-
---
-RegisterNetEvent("ad2")
-AddEventHandler("ad2",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad2', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad2')
-AddEventHandler('displayad2',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_AMMUNATION", "CHAR_AMMUNATION", true, 1, "~y~Ammunation~s~", "");
-DrawNotification(false, true);
-
-end)
---
-RegisterNetEvent("ad3")
-AddEventHandler("ad3",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad3', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad3')
-AddEventHandler('displayad3',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_FLOYD", "NEWS", true, 1, "~y~Weazel News~s~", "");
-DrawNotification(false, true);
-
-end)
---
-RegisterNetEvent("ad4")
-AddEventHandler("ad4",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad4', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad4')
-AddEventHandler('displayad4',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_MP_STRIPCLUB_PR", "CHAR_MP_STRIPCLUB_PR", true, 1, "~y~Vanilla Unicorn~s~", "");
-DrawNotification(false, true);
-
-end)
---
-RegisterNetEvent("ad5")
-AddEventHandler("ad5",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad5', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad5')
-AddEventHandler('displayad5',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_TAXI", "CHAR_TAXI", true, 1, "~y~Downtown Cab Co.~s~", "");
-DrawNotification(false, true);
-
-end)
---
-RegisterNetEvent("ad6")
-AddEventHandler("ad6",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad6', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad6')
-AddEventHandler('displayad6',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_LS_TOURIST_BOARD", "CHAR_LS_TOURIST_BOARD", true, 1, "~y~Los Santos Traffic Info~s~", "");
-DrawNotification(false, true);
-
-end)
---
-RegisterNetEvent("ad7")
-AddEventHandler("ad7",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad7', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad7')
-AddEventHandler('displayad7',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_LS_CUSTOMS", "CHAR_LS_CUSTOMS", true, 1, "~y~Los Santos Customs~s~", "");
-DrawNotification(false, true);
-
-end)
-
---
-RegisterNetEvent("ad8")
-AddEventHandler("ad8",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad8', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad8')
-AddEventHandler('displayad8',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_FLOYD", "ACE", true, 1, "~y~Ace Liquor~s~", "");
-DrawNotification(false, true);
-
-end)
---
-RegisterNetEvent("ad9")
-AddEventHandler("ad9",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad9', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad9')
-AddEventHandler('displayad9',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_FLOYD", "LTD", true, 1, "~y~Limited Gasoline~s~", "");
-DrawNotification(false, true);
-
-end)
---
-RegisterNetEvent("ad10")
-AddEventHandler("ad10",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad10', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad10')
-AddEventHandler('displayad10',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_FLOYD", "POSTAL", true, 1, "~y~GoPostal~s~", "");
-DrawNotification(false, true);
-
-end)
---
-RegisterNetEvent("ad11")
-AddEventHandler("ad11",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad11', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad11')
-AddEventHandler('displayad11',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_FLOYD", "NA", true, 1, "~y~Hayes Auto~s~", "");
-DrawNotification(false, true);
-
-end)
---
-RegisterNetEvent("ad12")
-AddEventHandler("ad12",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad12', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad12')
-AddEventHandler('displayad12',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_FLOYD", "VAN", true, 1, "~y~Vangelico~s~", "");
-DrawNotification(false, true);
-
-end)
---
-RegisterNetEvent("ad13")
-AddEventHandler("ad13",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad13', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad13')
-AddEventHandler('displayad13',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_FLOYD", "BELL", true, 1, "~y~Cluckin' Bell~s~", "");
-DrawNotification(false, true);
-
-end)
---
-RegisterNetEvent("ad14")
-AddEventHandler("ad14",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad14', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad14')
-AddEventHandler('displayad14',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_FLOYD", "BUG", true, 1, "~y~Bugstars~s~", "");
-DrawNotification(false, true);
-
-end)
---
-RegisterNetEvent("ad15")
-AddEventHandler("ad15",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad15', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad15')
-AddEventHandler('displayad15',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_BANK_FLEECA", "CHAR_BANK_FLEECA", true, 1, "~y~Fleeca Bank~s~", "");
-DrawNotification(false, true);
-
-end)
---
-RegisterNetEvent("ad16")
-AddEventHandler("ad16",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad16', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad16')
-AddEventHandler('displayad16',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_FLOYD", "NA", true, 1, "~y~Echo Sechs~s~", "");
-DrawNotification(false, true);
-
-end)
---
-RegisterNetEvent("ad17")
-AddEventHandler("ad17",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad17', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad17')
-AddEventHandler('displayad17',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_MP_MORS_MUTUAL", "CHAR_MP_MORS_MUTUAL", true, 1, "~y~Mors Mutual Insurance~s~", "");
-DrawNotification(false, true);
-
-end)
---
-RegisterNetEvent("ad18")
-AddEventHandler("ad18",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad18', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad18')
-AddEventHandler('displayad18',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_FLOYD", "OP", true, 1, "~y~PostOP~s~", "");
-DrawNotification(false, true);
-
-end)
---
-RegisterNetEvent("ad19")
-AddEventHandler("ad19",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad19', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad19')
-AddEventHandler('displayad19',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_FLOYD", "EXOTIC", true, 1, "~y~Auto Exotic~s~", "");
-DrawNotification(false, true);
-
-end)
---
-RegisterNetEvent("ad20")
-AddEventHandler("ad20",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad20', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad20')
-AddEventHandler('displayad20',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_FLOYD", "LSWP", true, 1, "~y~Los Santos Water and Power~s~", "");
-DrawNotification(false, true);
-
-end)
---
---
-RegisterNetEvent("ad21")
-AddEventHandler("ad21",function()
-		DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		local input = true
-		Citizen.CreateThread(function()
-		while input do
-		if input == true then
-		HideHudAndRadarThisFrame()
-		if UpdateOnscreenKeyboard() == 3 then
-		input = false
-		elseif UpdateOnscreenKeyboard() == 1 then
-		local inputText = GetOnscreenKeyboardResult()
-		if string.len(inputText) > 0 then
-		TriggerServerEvent('syncad21', inputText)
-		input = false
-		else
-			DisplayOnscreenKeyboard(false, "FMMC_KEY_TIP8", "", "", "", "", "", 60)
-		end
-		elseif UpdateOnscreenKeyboard() == 2 then
-		input = false
-		end
-		end
-		 Citizen.Wait(0)
-		 end
-		 
-	
-end)
-end)
-
-RegisterNetEvent('displayad21')
-AddEventHandler('displayad21',function(inputText)
-
-SetNotificationTextEntry("STRING");
-AddTextComponentString(inputText);
-SetNotificationMessage("CHAR_FLOYD", "D8", true, 1, "~y~Dynasty 8~s~", "");
-DrawNotification(false, true);
-
-end)
-
--- END OF ADVERTISMENTS
-
--- [Outfits]
-
--- LSPD Start
-
-RegisterNetEvent("lspdOutfit")
-AddEventHandler("lspdOutfit",function()
-local model = GetHashKey("s_m_y_cop_10")
-    RequestModel(model)
-    while not HasModelLoaded(model) do
-        RequestModel(model)
-        Citizen.Wait(0)
-    end
-    SetPlayerModel(PlayerId(), model)
-    SetModelAsNoLongerNeeded(model)
-    local ped = PlayerPedId()
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_NIGHTSTICK"), 1000, false)
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_FLASHLIGHT"), 1000, false)
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_STUNGUN"), 1000, false)
-
-    chatPrint( "Your Area loadout has been equipped!")	
-end)
-
--- LSPD End
-
--- BCSO Start
-
-RegisterNetEvent("bcsoOutfit")
-AddEventHandler("bcsoOutfit",function()
-local model = GetHashKey("s_m_y_cop_11")
-    RequestModel(model)
-    while not HasModelLoaded(model) do
-        RequestModel(model)
-        Citizen.Wait(0)
-    end
-    SetPlayerModel(PlayerId(), model)
-    SetModelAsNoLongerNeeded(model)
-    local ped = PlayerPedId()
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_NIGHTSTICK"), 1000, false)
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_FLASHLIGHT"), 1000, false)
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_STUNGUN"), 1000, false)
-
-    chatPrint( "Your Traffic loadout has been equipped!")	
-end)
-
--- BCSO End
-
--- SAHP Start
-
-RegisterNetEvent("sahpOutfit")
-AddEventHandler("sahpOutfit",function()
-local model = GetHashKey("s_m_y_swat_01")
-    RequestModel(model)
-    while not HasModelLoaded(model) do
-        RequestModel(model)
-        Citizen.Wait(0)
-    end
-    SetPlayerModel(PlayerId(), model)
-    SetModelAsNoLongerNeeded(model)
-    local ped = PlayerPedId()
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_COMBATPISTOL"), 1000, false)
-	--GiveWeaponComponentToPed(GetPlayerPed(-1), GetHashKey("WEAPON_PISTOL"), GetHashKey("COMPONENT_AT_PI_FLSH"))
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_NIGHTSTICK"), 1000, false)
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_FLASHLIGHT"), 1000, false)
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_STUNGUN"), 1000, false)
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_CARBINERIFLE"), 1000, false)
-    chatPrint( "Your Force Support loadout has been equipped!")	
-end)
-
-RegisterNetEvent("lspdOutfit1")
-AddEventHandler("lspdOutfit1",function()
-local model = GetHashKey("s_m_y_brit_01")
-    RequestModel(model)
-    while not HasModelLoaded(model) do
-        RequestModel(model)
-        Citizen.Wait(0)
-    end
-    SetPlayerModel(PlayerId(), model)
-    SetModelAsNoLongerNeeded(model)
-    local ped = PlayerPedId()
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_COMBATPISTOL"), 1000, false)
-	--GiveWeaponComponentToPed(GetPlayerPed(-1), GetHashKey("WEAPON_PISTOL"), GetHashKey("COMPONENT_AT_PI_FLSH"))
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_NIGHTSTICK"), 1000, false)
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_FLASHLIGHT"), 1000, false)
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_STUNGUN"), 1000, false)
-    chatPrint( "Your Plain Clothed loadout has been equipped!")	
-end)
-
-RegisterNetEvent("sahpOutfit12")
-AddEventHandler("sahpOutfit12",function()
-local model = GetHashKey("s_m_y_swat_50")
-    RequestModel(model)
-    while not HasModelLoaded(model) do
-        RequestModel(model)
-        Citizen.Wait(0)
-    end
-    SetPlayerModel(PlayerId(), model)
-    SetModelAsNoLongerNeeded(model)
-    local ped = PlayerPedId()
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_COMBATPISTOL"), 1000, false)
-	--GiveWeaponComponentToPed(GetPlayerPed(-1), GetHashKey("WEAPON_PISTOL"), GetHashKey("COMPONENT_AT_PI_FLSH"))
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_NIGHTSTICK"), 1000, false)
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_FLASHLIGHT"), 1000, false)
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_STUNGUN"), 1000, false)
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_CARBINERIFLE"), 1000, false)
-    chatPrint( "Your SFO Support loadout has been equipped!")	
-end)
-
--- SAHP End
-
--- Firefighter Start
-
-RegisterNetEvent("fireOutfit")
-AddEventHandler("fireOutfit",function()
-local model = GetHashKey("s_m_y_fireman_01")
-    RequestModel(model)
-    while not HasModelLoaded(model) do
-        RequestModel(model)
-        Citizen.Wait(0)
-    end
-    SetPlayerModel(PlayerId(), model)
-    SetModelAsNoLongerNeeded(model)
-    local ped = PlayerPedId()
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_FLARE"), 1000, false)
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_FLASHLIGHT"), 1000, false)
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_FIREEXTINGUISHER"), 1000, false)
-    chatPrint("Your Fire Department loadout has been equipped!")	
-end)
-
--- Firefighter End
-
--- Medic Start
-
-RegisterNetEvent("medicOutfit")
-AddEventHandler("medicOutfit",function()
-local model = GetHashKey("s_m_m_paramedic_01")
-    RequestModel(model)
-    while not HasModelLoaded(model) do
-        RequestModel(model)
-        Citizen.Wait(0)
-    end
-    SetPlayerModel(PlayerId(), model)
-    SetModelAsNoLongerNeeded(model)
-    local ped = PlayerPedId()
-	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey("WEAPON_FLASHLIGHT"), 1000, false)
-    chatPrint("Your EMS loadout has been equipped!")	
-end)
-
--- Medic End
-
--- Delete Vehicle Start -- 
-
-RegisterNetEvent( 'wk:deleteVehicle' )
- 
-local distanceToCheck = 5.0
-
-AddEventHandler( 'wk:deleteVehicle', function()
-    local ped = GetPlayerPed( -1 )
-
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-        local pos = GetEntityCoords( ped )
-
-        if ( IsPedSittingInAnyVehicle( ped ) ) then 
-            local vehicle = GetVehiclePedIsIn( ped, false )
-
-            if ( GetPedInVehicleSeat( vehicle, -1 ) == ped ) then 
-                SetEntityAsMissionEntity( vehicle, true, true )
-                deleteCar( vehicle )
-
-                if ( DoesEntityExist( vehicle ) ) then 
-                	ShowNotification( "~r~Unable to delete vehicle, try again." )
-                else 
-                	ShowNotification( "~g~Success: ~w~Vehicle deleted." )
-                end 
-            else 
-                ShowNotification( "You must be in the driver's seat!" )
-            end 
-        else
-            local playerPos = GetEntityCoords( ped, 1 )
-            local inFrontOfPlayer = GetOffsetFromEntityInWorldCoords( ped, 0.0, distanceToCheck, 0.0 )
-            local vehicle = GetVehicleInDirection( playerPos, inFrontOfPlayer )
-
-            if ( DoesEntityExist( vehicle ) ) then 
-                SetEntityAsMissionEntity( vehicle, true, true )
-                deleteCar( vehicle )
-
-                if ( DoesEntityExist( vehicle ) ) then 
-                	ShowNotification( "~r~Unable to delete vehicle, try again." )
-                else 
-                	ShowNotification( "~g~Success: ~w~Vehicle deleted." )
-                end 
-            else 
-                ShowNotification( "You must be in or near a vehicle to delete it." )
-            end 
-        end 
-    end 
 end )
 
--- Delete car function borrowed frtom Mr.Scammer's model blacklist, thanks to him!
-function deleteCar( entity )
-    Citizen.InvokeNative( 0xEA386986E786A54F, Citizen.PointerValueIntInitialized( entity ) )
+Citizen.CreateThread(function()
+	while true do
+		Citizen.Wait(0)
+		if IsEntityPlayingAnim(GetPlayerPed(PlayerId()), "random@arrests@busted", "idle_a", 3) then
+			DisableControlAction(1, 140, true)
+			DisableControlAction(1, 141, true)
+			DisableControlAction(1, 142, true)
+			DisableControlAction(0,21,true)
+		end
+	end
+end)
+
+
+
+function short()
+drawNotification("Dropped Short spikes!")
 end
 
-function GetVehicleInDirection( coordFrom, coordTo )
-    local rayHandle = CastRayPointToPoint( coordFrom.x, coordFrom.y, coordFrom.z, coordTo.x, coordTo.y, coordTo.z, 10, GetPlayerPed( -1 ), 0 )
-    local _, _, _, _, vehicle = GetRaycastResult( rayHandle )
-    return vehicle
+function medium()
+drawNotification("Dropped Medium Spikes!")
 end
 
-function ShowNotification( text )
-    SetNotificationTextEntry( "STRING" )
-    AddTextComponentString( text )
-    DrawNotification( false, false )
+function long()
+drawNotification("dropped long spikes!")
 end
-
--- Delete Vehicle End
-
--- Civ Emotes Start  --
-
-RegisterNetEvent('Smoke')
-AddEventHandler('Smoke', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_SMOKING", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
-RegisterNetEvent('Party')
-AddEventHandler('Party', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_PARTYING", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
-RegisterNetEvent('Drink')
-AddEventHandler('Drink', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_DRINKING", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
-RegisterNetEvent('Pushups')
-AddEventHandler('Pushups', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_PUSH_UPS", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
-RegisterNetEvent('Phone')
-AddEventHandler('Phone', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_STAND_MOBILE", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
-RegisterNetEvent('Injured')
-AddEventHandler('Injured', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_SUNBATHE_BACK", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
-RegisterNetEvent('Weed')
-AddEventHandler('Weed', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_SMOKING_POT", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
-RegisterNetEvent('Coffee')
-AddEventHandler('Coffee', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_AA_COFFEE", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
-RegisterNetEvent('Photo')
-AddEventHandler('Photo', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_PAPARAZZI", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
-RegisterNetEvent('Binoculars')
-AddEventHandler('Binoculars', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_BINOCULARS", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
-RegisterNetEvent('Situps')
-AddEventHandler('Situps', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_SIT_UPS", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
-RegisterNetEvent('Film')
-AddEventHandler('Film', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_MOBILE_FILM_SHOCKING", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
-RegisterNetEvent('Weights')
-AddEventHandler('Weights', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_MUSCLE_FREE_WEIGHTS", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
-RegisterNetEvent('Flex')
-AddEventHandler('Flex', function()
-
-local ped = GetPlayerPed( -1 )
-    if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
-	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_MUSCLE_FLEX", 0, true);
-	Citizen.Wait(15000)
-        ClearPedTasksImmediately(GetPlayerPed(-1))
-    end 
-end )
-
--- civ emotes end
-
-function EngineToggle()
-    player = GetPlayerPed(-1)
-    local vehicle = GetVehiclePedIsIn(player, false)
-    if IsVehicleEngineOn(vehicle) then
-        SetVehicleEngineOn(vehicle, false, false, true)
-        SetVehicleUndriveable(vehicle, true)
-    else
-        SetVehicleEngineOn(vehicle, true, false, true)
-        SetVehicleUndriveable(vehicle, false)
-    end
-end
-
-function drawNotification(text) --Just Don't Edit!
-    SetNotificationTextEntry("STRING")
-    AddTextComponentString(text)
-    DrawNotification(false, false)
-end
- 
-function tablelength(T) --Just Don't Edit!
-    local count = 0
-    for _ in pairs(T) do count = count + 1 end
-    return count
-end
- 
-function table.contains(table, element)
-  for _, value in pairs(table) do
-    if value == element then
-      return true
-    end
-  end
-  return false
-end
------------------------------------------------------------------------------------------------------------------------------------------------------------------
